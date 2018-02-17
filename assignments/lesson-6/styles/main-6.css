@@ -34,9 +34,43 @@ header .subheading {
 }
 
 nav {}
-nav button {}
+.hamburger{
+    display:block;
+    margin:auto}
+/*nav button {
+    display:block; 
+    margin:auto;
+}*/
+.hamburger:hover, .hamburger:focus{
+    background-color: #F9F6E3;
+}
+/*.dropdown responsive{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a: hover {
+    background-color: #FFCB99; width:100%; overflow:auto;
+}*/
+.show {
+    display:block;
+}
+navigation{
+    list-style: none; 
+    padding-left:0;
+}
+.navigation li{
+    display:none;}
+
 nav ul {
-    list-style-type: none;
+    display:none;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -46,6 +80,7 @@ nav ul {
 nav ul li {
     text-align: center;
 }
+
 nav ul li a {
     display: block;
     color: #2D7592;
@@ -69,11 +104,11 @@ main h3{
     font-size: 35px; 
 }
 main figure { 
-    margin: 0 0 .2rem 2%;  
+    margin: auto;  
 }
-main figure img { 
+/* main figure img { 
     width: 65%;
-}
+}*/
 
 section {
     column-gap: 10px;

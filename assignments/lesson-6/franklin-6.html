@@ -23,22 +23,27 @@
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
-    	<li><a href="#">Home</a></li>
+    <!--adapt from: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+  <nav class="dropdown responsive">  
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="myDropdown"><!-- class="naviagation responsive"-->
+        <li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#"> Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
-    </ul>		
+    </ul>    
   </nav>
     
 <main>
     <h2>The City of Franklin</h2>
     <figure>
-      <img src="images/pexels-photo-681361.jpg" alt="sunny cityview" width="85" height="200">
+      <img src="images/frandklin-small.jpg" alt="sunny cityview" sizes="98vw"
+           srcset="images/frandklin-small.jpg 500w,
+                   images/frandklin-medium.jpg 800w,
+                   images/frandklin-large.jpg 1100w">
+        <!--width="85" height="200" sizes="95vw"-->
     </figure>
     <h3>Weather Summary</h3>
     <section>
@@ -119,8 +124,8 @@ It was warm throughout the county Sunday, reporting a high of 82 degrees.The war
     <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Compass | <span id="currentdate">Current Date Placeholder</span></p>
 </footer>
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
 
 </body>
 </html>

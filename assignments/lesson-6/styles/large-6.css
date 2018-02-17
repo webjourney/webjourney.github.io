@@ -8,8 +8,11 @@ header img {
     margin: 0 0;
     max-height: 100%; /* fill the page in the small/phone view */
 }
-  article p.town-article img { 
-      max-width: 50%;
+ main figure img { 
+    width: 100%;
+}
+article p.town-article img { 
+    max-width: 50%;
   }
   
 }
