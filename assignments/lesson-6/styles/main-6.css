@@ -153,6 +153,7 @@ footer aside {
   padding-left: 10px;
   text-align: left; 
 }
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer>p{}
+/* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
