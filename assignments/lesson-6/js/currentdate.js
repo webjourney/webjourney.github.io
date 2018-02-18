@@ -25,6 +25,5 @@ month[10] = " November ";
 month[11] = " December ";
 
 var m = month[d.getMonth()];
-
 var y = d.getFullYear();
 document.write(n + a + m + y);

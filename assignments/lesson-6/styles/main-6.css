@@ -22,15 +22,16 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {}
 header h1 {
     font-size: 50px;
+    margin:5px;
 }
 header img {
     margin: 0 0;
     max-height: 25%; /* fill the page in the small/phone view */
 }
 header .subheading {
-    font-size: 12pt;
+    font-size: 15pt;
     font-family: 'Shadows Into Light Two', cursive;
-    margin: 5px
+    margin: 5px;
 }
 
 nav {}
@@ -44,21 +45,6 @@ nav {}
 .hamburger:hover, .hamburger:focus{
     background-color: #F9F6E3;
 }
-/*.dropdown responsive{
-    position:relative;
-    display:inline-block;
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a: hover {
-    background-color: #FFCB99; width:100%; overflow:auto;
-}*/
 .show {
     display:block;
 }

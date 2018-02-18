@@ -6,17 +6,17 @@
   }  /* hamburger button does not need to be shown */
 .hamburger{
    display:none}
-nav ul {
+ nav ul {
     display:flow-root;
     list-style-type:none;
     }
-nav ul li {
+ nav ul li {
    clear:both;
    display: inline-block;
    margin: 0 0;
    font-size:110%;
   }    
-main {
+ main {
    clear: both;
    font-size:105%;
   }
