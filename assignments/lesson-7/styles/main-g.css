@@ -1,0 +1,108 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+  color:#F9F6E3;
+  background-color: #2D7592;
+    /* Declare the base font-family - from google font api or other */
+}
+header, nav, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    color: #F9F6E3;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {}
+header h1 {
+    font-size: 45px;
+    display:inline-flex;
+    justify-content: center;
+}
+header img {} /* fill the page in the small/phone view */
+
+header .subheading {
+    font-size: 15pt;
+    font-family: 'Shadows Into Light Two', cursive;
+    display:flex;
+    justify-content: center;
+}
+
+nav {}
+.hamburger{
+    display:flex;
+    justify-content:center;
+    }
+/*nav button {
+    display:block; 
+    margin:auto;
+}*/
+.hamburger:hover, .hamburger:focus{
+    background-color: #F9F6E3;
+}
+.show {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+navigation{
+    list-style: none; 
+}
+.navigation li{
+    display:none;
+}
+.dropdown responsive{
+    display:none;
+    justify-content: center;
+}
+nav ul {
+    display:none;
+    overflow: hidden;
+    background-color: #CDEBF1
+}
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-flex;
+    color: #2D7592;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #2D7592;
+    color: #FFCB99;
+}
+nav ul li a:hover {
+    background-color: #F9F6E3;
+}
+
+main {
+    display:grid;
+    grid-template-rows : auto;
+    justify-content: center;
+}
+main h2{
+    text-align: center;
+}
+main .gridlay {
+    justify-content:center;
+    grid-gap: 50px;
+    font-size: 15px;
+    }
+footer {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  }
+footer aside {
+  display: flex;
+  text-align: left; 
+}
+footer>p{}
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
