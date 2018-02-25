@@ -8,6 +8,11 @@ body {
   background-color: #2D7592;
     /* Declare the base font-family - from google font api or other */
 }
+.bodylay{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
 header, nav, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     color: #F9F6E3;
@@ -18,6 +23,11 @@ header, nav, footer { /* the comma means apply the following CSS declarations to
 }
 
 header {}
+.headerlay{
+    flex:1 1 80px;
+    flex-direction:column;
+    text-align:center;
+}
 header h1 {
     font-size: 45px;
     display:inline-flex;

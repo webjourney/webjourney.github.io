@@ -26,16 +26,19 @@ body header img .imglay{
   }    
  main {
    clear: both;
-   font-size:105%;
+   font-size:98%;
+   justify-content: center;
   }
  /*main figure img { 
    width: 50%; 
   }*/
   main section{
    text-align: center;
-   column-count: 3;
+   flex-direction:row;
+   column-count: 2;
   }
   section picture img {
+      
    }
   section.forecast {}  /* show the 10-day forecast with the medium view and up */
   article p {

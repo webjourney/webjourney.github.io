@@ -21,6 +21,11 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {}
+.headerlay{
+    flex:1 1 80px;
+    flex-direction:column;
+    text-align:center;
+}
 header h1 {
     font-size: 45px;
     display:inline-flex;
@@ -88,6 +93,7 @@ main {}
 .mainlay{
     display:flex;
     flex-direction:column;
+    text-align: center;
 }
 main h2 {
     font-size: 40px;
@@ -95,8 +101,7 @@ main h2 {
 main h3{
     font-size: 35px; 
 }
-main figure { 
-    display:flex;  
+main figure {   
 }
 figure .gridlay{
  display:grid;
@@ -133,9 +138,12 @@ article p {
     display: flex;
     justify-content: center;
 }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+.town-article{  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
  /* fill the page in the small/phone view */
-    display:flex;
+    flex-flow: row;
+    justify-content:center;
+    text-align: center;
+    
   
 }
 

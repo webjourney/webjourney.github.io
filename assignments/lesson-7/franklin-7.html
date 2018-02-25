@@ -15,9 +15,10 @@
 <body class="bodylay">
 
   <header>
-      <!--from https://pt.pngtree.com/freepng/lovely-compass-vector_2394830.html-->
+    <div class="headerlay"><!--from https://pt.pngtree.com/freepng/lovely-compass-vector_2394830.html-->
     <img src="images/logoone.png" alt="The site logo">
     <h1>Weather Compass</h1>
+    </div>
     <div class="subheading">Bring you the newest weather forecasts.</div>
   </header>
 
@@ -37,6 +38,7 @@
     
 <main class="mainlay">
     <h2>The City of Franklin</h2>
+    <section >
     <figure>
       <img src="images/frandklin-small.jpg" alt="sunny cityview" sizes="98vw"
            srcset="images/frandklin-small.jpg 500w,
@@ -44,27 +46,27 @@
                    images/frandklin-large.jpg 1100w">
         <!--width="85" height="200" sizes="95vw"-->
     </figure>
+        
     <h3>Weather Summary</h3>
     <section>
-      <h6>-</h6>
-      <div class="highlow">
-        <p>High: 90&deg;F</p>  
-        <p>Low: 66&deg;F</p>  
+       <div class="highlow">
+           <p>High: <span id="highT">90</span>&deg;F</p>  
+           <p>Low: <span id="lowT">66</span>&deg;F</p>  
       </div>
       <div class="current">
         Summary: Sunny
-          <p>
         <picture>
             <img src="images/sunny.png" alt="It's Sunny" width="50">
         </picture>
-          </p>
-      </div>   
+      </div>
       <div class="conditions">
         <p>Precipitation: 0%</p>  
-        <p>Max Wind Speed: 5 mph SW</p>  
+          <p>Max Wind Speed: <span id="windS">5</span> mph SW</p>
+          <p><span id="windchill">Windchill:</span><script src="js/windchill.js"></script></p>
       </div>           
     </section>
-        
+    </section>
+    <div>
     <section class="forecast">
       <h3>10 Day Forecast</h3>
       <table>
@@ -98,7 +100,7 @@
 		</tbody>
       </table>
     </section>
-      
+    </div>  
     <article>
       <h3>Franklin Breaks Record</h3>	
       <p class="town-article">
