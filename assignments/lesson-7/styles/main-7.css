@@ -28,7 +28,7 @@ header {}
 }
 header h1 {
     font-size: 45px;
-    display:inline-flex;
+    display:flex;
     justify-content: center;
 }
 header img {} /* fill the page in the small/phone view */
