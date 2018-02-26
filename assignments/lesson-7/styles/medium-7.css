@@ -10,7 +10,7 @@ body header img .imglay{
     justify-content: center;
 }
     .hamburger{
-   display:none
+   display:none;
 }
     .show {
     flex-direction:row;
@@ -26,26 +26,29 @@ body header img .imglay{
   }    
  main {
    clear: both;
-   font-size:98%;
-   justify-content: center;
+   font-size:100%;
   }
  /*main figure img { 
    width: 50%; 
   }*/
-  main section{
+ article{
+   justify-content:center;      
    text-align: center;
-   flex-direction:row;
    column-count: 2;
   }
   section picture img {
-      
    }
-  section.forecast {}  /* show the 10-day forecast with the medium view and up */
+  section.forecast {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100%;
+    }  /* show the 10-day forecast with the medium view and up */
   article p {
-   column-count:2;
+  /* column-count:2;*/
    font-size:65%;
+   text-align: justify;
 }
   article p.town-article img { 
-  }  /* responsive images */
+    }  /* responsive images */
 
 }
