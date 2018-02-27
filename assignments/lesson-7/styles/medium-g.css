@@ -10,7 +10,7 @@ body header img .imglay{
     justify-content: center;
 }
     .hamburger{
-   display:none
+   display:none;
 }
     .show {
     flex-direction:row;
@@ -19,18 +19,18 @@ body header img .imglay{
     display:flex;
     list-style-type:none;
     justify-content: center;
-    }
+}
  nav ul li {
    clear:both;
    font-size:110%;
-  }    
+}    
  main {
    clear: both;
    font-size:105%;
-  }
+}
  .gridlay {
     display:grid;
     grid-template-columns: 300px 300px;
-     }
+}
 }
   

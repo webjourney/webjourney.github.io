@@ -9,4 +9,4 @@ let f = 35.74 + 0.6215 *  averageT - 35.75 * Math.pow(sp, 0.16) + 0.4275 *  aver
 	var multiplier = Math.pow(10, digits);
 	result= Math.round(f * multiplier) / multiplier;
 
-document.getElementById('windchill').innerHTML = 'Wind Chill: ' + result;
+document.getElementById('windchill').innerHTML = 'Wind Chill: ' + result + '&degF';

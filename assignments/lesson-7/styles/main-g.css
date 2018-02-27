@@ -46,7 +46,7 @@ nav {}
 .hamburger{
     display:flex;
     justify-content:center;
-    }
+}
 /*nav button {
     display:block; 
     margin:auto;
@@ -103,11 +103,11 @@ main .gridlay {
     justify-content:center;
     grid-gap: 50px;
     font-size: 15px;
-    }
+}
 footer {
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
-  }
+}
 footer aside {
   display: flex;
   text-align: left; 

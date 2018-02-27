@@ -70,7 +70,7 @@ navigation{
 nav ul {
     display:none;
     overflow: hidden;
-    background-color: #CDEBF1
+    background-color: #CDEBF1;
 }
 nav ul li {
     text-align: center;
@@ -101,6 +101,9 @@ main {
 }
 main h2 {
     font-size: 40px;
+}
+h6{
+    display:none;
 }
 main h3{
     font-size: 35px; 
@@ -148,7 +151,7 @@ article p {
 }
 article p.town-article img {
     width:20%;
-  }  /* responsive images */
+}  /* responsive images */
 
 footer {
     font-size: 12px;
