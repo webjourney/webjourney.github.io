@@ -97,13 +97,13 @@ main {
     flex-direction:column;
     text-align: center;
     justify-content: center;
-    font-size: 20pt;
+    font-size: 18pt;
 }
 main h2 {
-    font-size: 35px;
+    font-size: 40px;
 }
 main h3{
-    font-size: 25px; 
+    font-size: 35px; 
 }
 main figure { 
 }
@@ -113,10 +113,10 @@ main figure img {
 }
 
 section {
-    column-gap: 5px;
+   /* column-gap: 5px;*/
 }
 section h3{
-    font-size: 18px;
+    font-size: 30px;
 }
 section picture img {
 }
@@ -124,38 +124,41 @@ section.forecast {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size:15px;
+    font-size:25px;
+}
+table{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:20px;
 }
 article h3{
     font-size: 35px;
 }
 article p {
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Shadows Into Light Two', cursive;
-    text-align: justify;
-    line-height: 1.3;
     display: flex;
+    text-align: justify;
     justify-content: center;
+    line-height: 1.3;
 }
 .town-article{  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
  /* fill the page in the small/phone view */
-    flex-flow: row;
-    justify-content:center;
-    text-align: center;    
+    flex-flow: column;
+    justify-content: center;
 }
 article p.town-article img {
     width:20%;
   }  /* responsive images */
 
 footer {
-  font-size: 12px;
-  font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
 }
 .footerlay{
 }
 footer aside {
-  display: inline-flex;
-  text-align: justify; 
+    display: inline-flex;
+    text-align: justify; 
 }
 footer>p{}
 /* This structure refers to p elements that are direct children of the footer element */
