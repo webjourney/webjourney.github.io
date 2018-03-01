@@ -55,6 +55,7 @@ a
 }
 b{
     font-style: italic;
+    font-weight:100;
 }
 tfoot {
     color:black;
