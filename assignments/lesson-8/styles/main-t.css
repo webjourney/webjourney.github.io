@@ -1,0 +1,81 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color:white;
+  text-align: center;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    color: #F9F6E3;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header {}
+
+main {
+    display:flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 8px 8px 5px #628ca6;
+}
+thead {
+    color:black;
+    background-color:#7fb9c2;
+    font-weight: 900;
+    font-size:20pt;
+}
+tbody {
+    color:black;
+    font-size:12pt;
+    background-color:#e7ffed;
+}
+tbody tr:nth-child(even){
+    background-color: #e7f0ed;
+}
+
+tbody th{
+    color:white;
+    background-color:#628ca6;
+    font-weight:bold;
+    font-size:14pt;
+}
+a
+{
+    color:white;
+}
+b{
+    font-style: italic;
+}
+tfoot {
+    color:black;
+    background-color:#7fb9c2;
+    font-size: 9pt;
+}
+
+table, th, td {
+    padding:8px;
+    border: 1px solid #BBBBBB;
+}
+
+footer {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+}
+footer aside {
+  display: flex;
+  text-align: left; 
+}
+footer>p{}
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
