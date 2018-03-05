@@ -28,6 +28,9 @@ body header img .imglay{
    clear: both;
    font-size:85%;
 }
- 
+footer aside {
+  flex-direction:row;
+  justify-content:center;
+} 
 }
   

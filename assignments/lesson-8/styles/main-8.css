@@ -95,8 +95,6 @@ nav ul li a:hover {
 }
 
 main {
-    /*grid-template-rows : auto;
-    justify-content: center;*/
     font-size:10pt;
 
     
@@ -106,10 +104,6 @@ main h2{
     font-size: 35px;
 }
 main .gridlay {
-   /* margin-right:auto;
-    margin-left:auto;*/
-    /*display:grid;
-    justify-content: center;*/
     text-align: center;
     grid-gap: 50px;
     font-family: 'Shadows Into Light Two', cursive;
@@ -117,10 +111,8 @@ main .gridlay {
 
 form#stormweather{
     margin:16px 3%;
-    
-   /* justify-content: center;*/
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { /* from w3cschool Chrome, Firefox, Opera, Safari 10.1+ */
     color: #D1D0B4;
     opacity: 1; /* Firefox */
 }
@@ -144,7 +136,8 @@ lable{
 }
 label span{
     display:block;
-    padding-top:20px;
+    padding-bottom:8px;
+    padding-top: 8px;
     text-align: left;
 }
 input.submitBtn{
@@ -158,7 +151,6 @@ input.submitBtn{
 label input{
     background-color: #f4f2ef;
     padding:.3em .3em .3em 2em;
-    border: solid 1px gray;
     border-radius: 5px;
     background-image: url(../images/ico_validation.png);
     background-repeat: no-repeat;
@@ -183,7 +175,7 @@ footer {
 }
 footer aside {
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   text-align: left;
 }
 footer>p{

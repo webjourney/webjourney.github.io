@@ -66,17 +66,15 @@
               </datalist>    
               </label>
             
-              <label for="rating"><span>Storm Severity:</span>
+              <label for="rating"><span>Storm Severity Range (1 to 10):</span>
 		<!--<input name="stormrat" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">-->
              
                   <!--
                   <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		<span id="ratingvalue">5</span><br>-->
                   
-                  <input type="range" id="range" min="0" max="10" step="1" onchange="adjustRating()">
-                  
-                  <input type="number" id="box"/><!--<span id="box"> </span> <!--<div id="box"></div>-->
-		<!--<span id="ratingvalue">5</span><br>-->
+                  <input type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
+                  <span id="box">5</span>
               </label>
               
               
@@ -101,7 +99,7 @@
               
               <p><input type="submit" value="Submit" class="submitBtn"></p>
         <!--<input type="hidden" value="Storm Form Submit" name="subject">-->
-        <input name="redirect" type="hidden" value="thanks.html">
+               <!--input name="redirect" type="hidden" value="thanks.html"-->
         
           </fieldset>   
         </form>
@@ -117,10 +115,11 @@
 		   contact@theurl.com 
 		</p>
     </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Compass | <span id="currentdate"><script src="js/currentdate-7.js"></script></span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Compass | <span id="currentdate"><script src="js/currentdate-8.js"></script></span></p>
 </footer>
 
-  <script src="js/hamburger-7.js"></script>
+  <!--<script src="js/currentdate-8.js"></script>-->
+  <script src="js/ratingvalue.js"></script>
   <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
 
 </body>
