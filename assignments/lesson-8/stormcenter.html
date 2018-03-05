@@ -67,8 +67,16 @@
               </label>
             
               <label for="rating"><span>Storm Severity:</span>
-		<input name="stormrat" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br>
+		<!--<input name="stormrat" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">-->
+             
+                  <!--
+                  <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>-->
+                  
+                  <input type="range" id="range" min="0" max="10" step="1" onchange="adjustRating()">
+                  
+                  <input type="number" id="box"/><!--<span id="box"> </span> <!--<div id="box"></div>-->
+		<!--<span id="ratingvalue">5</span><br>-->
               </label>
               
               
