@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+ 
+header h1 {
+    font-size: 300%;
+}
+header img {
+ /* fill the page in the small/phone view */
+}
+form#stormweather{
+   display:flex;
+   justify-content: center;   
+}
+legend{
+    color: #2D7592;
+    font-size: 85%;
+    }
+fieldset{
+    margin-left: 30px;
+}
+footer aside {
+  display: flex;
+  padding-left: auto;
+}
+}

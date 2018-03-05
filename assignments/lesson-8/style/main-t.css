@@ -50,14 +50,7 @@ tbody th{
     font-weight:bolder;
     font-size:14pt;
 }
-a
-{
-    color:white;
-}
-b{
-    font-style: italic;
-    font-weight:lighter;
-}
+
 tfoot {
     color:black;
     background-color:#7fb9c2;

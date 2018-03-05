@@ -71,6 +71,7 @@ navigation{
 }
 nav ul {
     display:none;
+    list-style-type:none;
     overflow: hidden;
     background-color: #CDEBF1
 }
@@ -92,7 +93,6 @@ nav ul li a:hover {
 }
 
 main {
-    display:grid;
     grid-template-rows : auto;
     justify-content: center;
 }
@@ -100,6 +100,7 @@ main h2{
     text-align: center;
 }
 main .gridlay {
+    display:grid;
     justify-content:center;
     grid-gap: 50px;
     font-size: 15px;
