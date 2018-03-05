@@ -16,6 +16,6 @@ fieldset{
 }
 footer aside {
   display: flex;
-  padding-left: auto;
+  padding-left: 15px;
 }
 }

@@ -30,8 +30,8 @@
     	<li><a href="#"> Franklin </a></li>
     	<li><a href="#"> Greenville </a></li>
     	<li><a href="#"> Springfield </a></li>
-    	<li class="active"><a herf="#"> Storm Center </a></li>
-    	<li><a herf="#"> Gallery</a></li>
+    	<li class="active"><a href="#"> Storm Center </a></li>
+    	<li><a href="#"> Gallery</a></li>
     </ul>    
   </nav>
 <main> <!-- class="mainlay"-->
@@ -48,7 +48,7 @@
             
               <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="##########" required></label>
         
-              <label><span>Zip Code:</span><input name="zip" type="number" placeholder="90000" pattern="[0-9]{10,20}" required></label>
+              <label><span>Zip Code:</span><input name="zip" type="number" placeholder="90000"  required></label>
          </fieldset>
         
         
@@ -67,37 +67,31 @@
               </label>
             
               <label for="rating"><span>Storm Severity Range (1 to 10):</span>
-		<!--<input name="stormrat" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">-->
-             
-                  <!--
-                  <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br>-->
-                  
-                  <input type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
+                  <input name="rate" type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
                   <span id="box">5</span>
               </label>
               
               
-              <label name="selectregion"><span>Storm Type:</span>
+              <label><span>Storm Type:</span></label>
               <select>
                 <option value="selectreg" disabled selected>Select Region...</option>
                 <option value="frank">Franklin</option>
                 <option value="green">Greenville</option>
                 <option value="spring">Springfield</option>
               </select>    
-              </label>
               
-              <label><span>User In-danger Level:</span> 
+              
+              <label><span>User In-danger Level:</span></label> 
               <input type="radio" name="level" value="yes"> Yes<br>
               <input type="radio" name="level" value="maybe"> Maybe<br>
               <input type="radio" name="level" value="no">No 
-              </label>
+              
             
               <label><span>Additional Information or Comments:</span>
               <textarea name="message" rows="5" cols="20"></textarea>
               </label>
               
-              <p><input type="submit" value="Submit" class="submitBtn"></p>
+              <p><input name="submiting" type="submit" value="Submit" class="submitBtn"></p>
         <!--<input type="hidden" value="Storm Form Submit" name="subject">-->
                <!--input name="redirect" type="hidden" value="thanks.html"-->
         
