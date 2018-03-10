@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+ 
+header h1 {
+    font-size: 300%;
+}
+header img {
+ /* fill the page in the small/phone view */
+}
+main .gridlay {
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+}
+.gridlay img:hover {
+    box-shadow: 5px 5px 10px #c3c0c0;
+    }
+}
