@@ -12,7 +12,9 @@ weatherObject.onload = function () {
     
     document.getElementById('w_string').innerHTML = weatherInfo.current_observation.weather;
     
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('w_icon').innHTML= "<img src = weatherInfo.current_observation.icon_url>";
+    var rep = str.replace("http:", "https:");
+    document.getElementById('w_icon').innerHTML = rep;
     
     document.getElementById('nowT').innerHTML = weatherInfo.current_observation.temp_f;
     
