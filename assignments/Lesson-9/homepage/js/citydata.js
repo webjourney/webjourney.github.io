@@ -1,4 +1,8 @@
-var output = document.querySelector('main');
+/*var output = document.querySelector('main');*/
+var frank = document.querySelector('article');
+var green = document.querySelector('section');
+var spring = document.querySelector('b');
+
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -11,57 +15,80 @@ request.onload = function() {
 	var cities = jsondata['towns'];
     franklin(cities);
     greenville(cities);
+    springfield(cities);
 }
 
 function franklin(cities) {
     var city = document.createElement('h2');
     city.textContent = ''+ cities[0].name + ' City';   
-    output.appendChild(city);
+    frank.appendChild(city);
    
     var pic =document.createElement('img');
     pic.src = "images/greenville.jpeg";
-    output.appendChild(pic); 
+    frank.appendChild(pic); 
     var motto = document.createElement('p');
         
     var yrfd = document.createElement('p');
-     var pop = document.createElement('div');       
-     var rainf = document.createElement('h3');
+     var pop = document.createElement('p');       
+     var rainf = document.createElement('p');
     motto.textContent = '"' + cities[0].motto + '"'; 
-    yrfd.textContent = cities[0].yearFounded + ' year';
-	pop.textContent = cities[0].currentPopulation + ' people'; 
-    rainf.textContent = cities[0].averageRainfall + ' rain';
+    yrfd.textContent ='Year founded: ' + cities[0].yearFounded;
+	pop.textContent = 'Population: ' + cities[0].currentPopulation; 
+    rainf.textContent ='Annual Rainfall: ' + cities[0].averageRainfall;
     
-    output.appendChild(motto);
-    output.appendChild(yrfd);
-    output.appendChild(pop);
-    output.appendChild(rainf);
+    frank.appendChild(motto);
+    frank.appendChild(yrfd);
+    frank.appendChild(pop);
+    frank.appendChild(rainf);
 };
 	
 function greenville(cities) {
     var city = document.createElement('h2');
     city.textContent = ''+ cities[1].name + ' City';   
-    output.appendChild(city);
+    green.appendChild(city);
    
     var pic =document.createElement('img');
     pic.src = "images/franklin.jpg";
-    output.appendChild(pic); 
+    green.appendChild(pic); 
     var motto = document.createElement('p');
         
     var yrfd = document.createElement('p');
-     var pop = document.createElement('div');       
-     var rainf = document.createElement('h3');
+     var pop = document.createElement('p');       
+     var rainf = document.createElement('p');
     motto.textContent = '"' + cities[1].motto + '"'; 
-    yrfd.textContent = cities[1].yearFounded + ' year';
-	pop.textContent = cities[1].currentPopulation + ' people'; 
-    rainf.textContent = cities[1].averageRainfall + ' rain';
+    yrfd.textContent = 'Year founded: ' + cities[1].yearFounded;
+	pop.textContent = 'Population: ' + cities[1].currentPopulation; 
+    rainf.textContent ='Annual Rainfall: ' +  cities[1].averageRainfall;
     
-    output.appendChild(motto);
-    output.appendChild(yrfd);
-    output.appendChild(pop);
-    output.appendChild(rainf);
+    green.appendChild(motto);
+    green.appendChild(yrfd);
+    green.appendChild(pop);
+    green.appendChild(rainf);
 };
 
-
+function springfield(cities) {
+    var city = document.createElement('h2');
+    city.textContent = ''+ cities[3].name + ' City';   
+    spring.appendChild(city);
+   
+    var pic =document.createElement('img');
+    pic.src = "images/springfield.jpeg";
+    spring.appendChild(pic); 
+    var motto = document.createElement('p');
+        
+    var yrfd = document.createElement('p');
+     var pop = document.createElement('p');       
+     var rainf = document.createElement('p');
+    motto.textContent = '"' + cities[3].motto + '"'; 
+    yrfd.textContent = 'Year founded: ' + cities[3].yearFounded;
+	pop.textContent = 'Population: ' + cities[3].currentPopulation; 
+    rainf.textContent = 'Annual Rainfall: ' + cities[3].averageRainfall;
+    
+    spring.appendChild(motto);
+    spring.appendChild(yrfd);
+    spring.appendChild(pop);
+    spring.appendChild(rainf);
+};
 
 
 

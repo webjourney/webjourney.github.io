@@ -28,6 +28,20 @@ body header img .imglay{
    clear: both;
    font-size:85%;
 }
+  .wsinfo{
+    margin: auto 100px auto 100px;
+    display:flex;
+    padding: 10px;
+}
+    .citylay{
+     margin:auto;
+    display:grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-gap:8px;   
+}
+    .citylay h6{
+        display:none;
+}    
 footer aside {
   flex-direction:row;
   justify-content:center;
