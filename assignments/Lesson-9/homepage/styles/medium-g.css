@@ -32,5 +32,29 @@ body header img .imglay{
     display:grid;
     grid-template-columns: 300px 300px;
 }
+    
+  main  article{
+   display:flex;
+   flex-direction: row;
+   justify-content:center;      
+   text-align: center;
+   /*column-count: 2;*/
+}
+ section picture img {}
+    
+  section.forecast {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100%;
+}  /* show the 10-day forecast with the medium view and up */
+   article p {
+  /* column-count:2;*/
+   font-size:65%;
+}
+    .town-article{
+    /*flex-direction: column;*/
+}    
+    
+
 }
   

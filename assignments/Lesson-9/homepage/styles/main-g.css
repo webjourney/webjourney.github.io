@@ -97,8 +97,17 @@ main {
     grid-template-rows : auto;
     justify-content: center;
 }
+.mainlay{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    font-size: 18pt;
+}
+
 main h2{
     text-align: center;
+    font-size: 40px;
 }
 main .gridlay {
     display:grid;
@@ -106,15 +115,75 @@ main .gridlay {
     grid-gap: 50px;
     font-size: 15px;
 }
+
+h6{
+    display:none;
+}
+main h3{
+    font-size: 35px; 
+}
+main figure { 
+}
+
+main figure img { 
+    width: 100%;
+}
+section {
+   /* column-gap: 5px;*/
+}
+section h3{
+    font-size: 30px;
+}
+section div{
+    font-size:30px;
+}
+section picture img {
+}
+section.forecast { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:25px;
+}
+table{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:20px;
+}
+article h3{
+    font-size: 35px;
+}
+article p {
+    font-size: 18px;
+    font-family: 'Shadows Into Light Two', cursive;
+    /*display: flex;
+    text-align: justify;
+    justify-content: center;*/
+    /*justify-content: center;*/
+    text-align: justify;
+    display:block;
+    line-height: 1.3;
+    padding-left: 10px;
+}
+
+article.town-article img {
+  margin: auto;
+  padding: 10px;
+  float:right;
+}
 footer {
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
 }
 footer aside {
   display: flex;
-  text-align: left; 
+  padding-left: 10px;
+  text-align: left;
 }
-footer>p{}
+footer>p{
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */

@@ -8,9 +8,9 @@
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Nunito%7CShadows+Into+Light+Two" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-f.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-f.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-f.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="styles/main-g.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-g.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-g.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
 </head>
 <body class="bodylay">
 
@@ -48,27 +48,28 @@
         <!--width="85" height="200" sizes="95vw"-->
     </figure>
       <section>  
-    <h3>Weather Summary</h3>
-       <div class="highlow">
-           <p>High: <span id="highT">90</span>&deg;F</p>  
-           <p>Low: <span id="lowT">66</span>&deg;F</p>
-      </div>
+          <h3>Weather Summary for <span id="place">City,State</span></h3>
+                  
       <div class="current">
-        Summary: Sunny
+          <p>Current wether condition:<span id= "w_string"> </span></p>
         <picture>
-            <img src="images/sunny.png" alt="It's Sunny" width="50">
+            <img id="w_icon" src="" alt="current weather">
         </picture>
+          <p>Current Temperature:<span id="nowT"></span>&deg;F</p>
       </div>
       <div class="conditions">
+          
         <p>Precipitation: 0%</p>  
-          <p>Max Wind Speed: <span id="windS">5</span> mph SW</p>
-          <p><span id="windchill">Windchill:</span></p>
+          <p>Max Wind Speed: <span id="windS">5</span> mph <span id="direction"></span></p>
+          <p>Windchill: <span id="windchill"></span>&deg;F</p>
+          <p>Today will be:<span id="for_string"></span></p>
       </div> 
     </section>
     </article>
     
     <div>
     <section class="forecast">
+        <p><span id="for_string"></span></p>
       <h3>10 Day Forecast</h3>
       <table>
 	    <thead>
@@ -128,6 +129,7 @@ It was warm throughout the county Sunday, reporting a high of 82 degrees.The war
 
   <script src="js/hamburger.js"></script>
   <script src="js/windchill.js"></script>
+  <script src="js/wu-weather.js"></script>   
   <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
 
 </body>
