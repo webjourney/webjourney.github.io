@@ -34,71 +34,34 @@
     	<li><a href="gallery.html"> Gallery </a></li>
     </ul>    
   </nav>
-<main> <!-- class="mainlay"-->
-    <h2>Weather Stories</h2>
-    <div class="left"> <!--"gridlay"-->
-        <form action="thanks.html" enctype="multipart/form-data" name="forms" id="stormweather">
+<main class="wsinfo"> <!-- class="mainlay"-->
+    <h2>Weather Story</h2>
+    <img src="images/weatherstory.jpeg" alt="weather in the city" width="500">
+    <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
         
-          <fieldset>
-              <legend><span>Personal Information</span></legend>
-              <label><span>Full Name:</span>
-                <input name="fullname" type="text" placeholder="First Last" pattern="[a-zA-z -._]{5,99}" required></label>
+    </p>
+    <div class= "citylay">
+        <article><h6>&ensp;</h6></article>
+        <section><h6>&ensp;</h6></section>
+        <b><h6>&ensp;</h6></b>
         
-              <label><span>Email:</span><input name="email" type="email" placeholder="example@mail.com"></label>
-            
-              <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="##########" required></label>
+    <!--<article>
+        <h6>&ensp;</h6><span id="city"><script src="js/citydata.js"></script></span>
+        <img src="images/franklin.jpg" alt="The City of Franklin">
+    </article>
         
-              <label><span>Zip Code:</span><input name="zip" type="number" placeholder="90000"  required></label>
-         </fieldset>
+    <section><h6>&ensp;</h6><span id="city"><script src="js/citydata.js"></script></span>
+    <img src="images/greenville.jpeg" alt="The City of Greenville">
+    </section>
         
-        
-          <fieldset>
-              <legend><span>Storm Information</span></legend>
-              <label><span>Storm Date:</span><input name="date" type="date" ></label>
-        
-              <label><span>Storm Type:</span><input name="types" list="stormtypes" >
-              <datalist id="stormtypes">
-                  <option value="Flash Flood"></option>
-                  <option value="Hail"></option>
-                  <option value="Hurricane"></option>
-                  <option value="Thunderstorm"></option>
-                  <option value="Tornado"></option>
-              </datalist>    
-              </label>
-            
-              <label for="rating"><span>Storm Severity Range (1 to 10):</span>
-                  <input name="rate" type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
-                  <span id="box">5</span>
-              </label>
-              
-              
-              <label><span>Storm Type:</span></label>
-              <select>
-                <option value="selectreg" disabled selected>Select Region...</option>
-                <option value="frank">Franklin</option>
-                <option value="green">Greenville</option>
-                <option value="spring">Springfield</option>
-              </select>    
-              
-              
-              <label><span>User In-danger Level:</span></label> 
-              <input type="radio" name="level" value="yes"> Yes<br>
-              <input type="radio" name="level" value="maybe"> Maybe<br>
-              <input type="radio" name="level" value="no"> No 
-              
-            
-              <label><span>Additional Information or Comments:</span>
-              <textarea name="message" rows="5" cols="20"></textarea>
-              </label>
-              
-              <p><input name="submiting" type="submit" value="Submit" class="submitBtn"></p>
-        <!--<input type="hidden" value="Storm Form Submit" name="subject">-->
-               <!--input name="redirect" type="hidden" value="thanks.html"-->
-        
-          </fieldset>   
-        </form>
-    </div>    
-    </main>
+    <b><h6>&ensp;</h6><span id="city"><script src="js/citydata.js"></script></span>
+    <img src="images/springfield.jpeg" alt="The City of Springfield">
+    </b>-->
+    
+    <script src="js/citydata.js"></script>
+    </div>
+</main>
     
 <footer class="footerlay">
     <aside>

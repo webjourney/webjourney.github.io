@@ -23,10 +23,12 @@ weatherObject.onload = function () {
     document.getElementById('for_string').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["0"].fcttext;
     
     /*document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;*/
+    /*document.getElementById('w_icon').innerHTML = "<img src= \"" + weatherInfo.current_observation.icon_url + "\" > ";
+    var newst = document.getElementById('w_icon').innerHTML;*/
+    document.getElementById('w_icon').innerHTML = "<img src=\"" + weatherInfo.current_observation.icon_url + "\" > ";
     
-    document.getElementById('w_icon').innerHTML = "<img src= \"" + weatherInfo.current_observation.icon_url + "\" > ";
-    var str = document.getElementById('w_icon').innerHTML;
-    var rep = str.replace('http:', 'https:');
-    document.getElementById('w_icon').innerHTML = rep;
+    var newst = document.getElementById('w_icon').innerHTML;
+    var rep = newst.replace("http:", "https:");
+    document.getElementById("w_icon").innerHTML = rep;
     
 }

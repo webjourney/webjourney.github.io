@@ -1,5 +1,62 @@
+var output = document.querySelector('article');
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+	var jsondata = request.response;
+	var cities = jsondata['towns'];
+    for (var i = 0; i < cities.length; i++) {
+        
+	if (cities[i].name == "Franklin" || cities[i].name == "Springfield" || cities[i].name == "Greenville" ){
+    
+		var city = document.createElement('h3');
+        city.textContent = ''+ cities[i].name + ' City';
+        
+        var pic =document.createElement('img');
+        pic.src = "images/franklin.jpg";
+        
+        var motto = document.createElement('p');
+        motto.textContent = '"' + cities[i].motto + '"';
+
+        var yrfd = document.createElement('p');
+        yrfd.textContent = 'Year founded: ' + cities[i].yearFounded;
+        
+        var pop = document.createElement('div');
+        pop.textContent =  'Population: ' + cities[i].currentPopulation; 
+
+        var rainf = document.createElement('h3');
+		 rainf.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
+        
+		output.appendChild(city);
+        output.appendChild(pic);
+		output.appendChild(motto);
+        output.appendChild(yrfd);
+        output.appendChild(pop);
+        output.appendChild(rainf);
+	}
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*var output = document.querySelector('main');*/
-var frank = document.querySelector('article');
+/*var frank = document.querySelector('article');
 var green = document.querySelector('section');
 var spring = document.querySelector('b');
 
@@ -13,6 +70,7 @@ request.send();
 request.onload = function() {
 	var jsondata = request.response;
 	var cities = jsondata['towns'];
+ 
     franklin(cities);
     greenville(cities);
     springfield(cities);
@@ -24,7 +82,8 @@ function franklin(cities) {
     frank.appendChild(city);
    
     var pic =document.createElement('img');
-    pic.src = "images/greenville.jpeg";
+    pic.src = "images/franklin.jpg";
+    
     frank.appendChild(pic); 
     var motto = document.createElement('p');
         
@@ -48,7 +107,7 @@ function greenville(cities) {
     green.appendChild(city);
    
     var pic =document.createElement('img');
-    pic.src = "images/franklin.jpg";
+    pic.src = "images/greenville.jpeg";
     green.appendChild(pic); 
     var motto = document.createElement('p');
         
