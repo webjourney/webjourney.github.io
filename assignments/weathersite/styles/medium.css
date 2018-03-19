@@ -57,6 +57,9 @@ body header img .imglay{
     display:flex;
     padding: 10px;
 }
+ .wsinfo img{
+    align-content: center;    
+    }
  
 .wsinfo .citylay{
     margin:none;
