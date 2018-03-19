@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/07dd5555c9ddfa39/forecast/geolookup/conditions/q/MN/Franklin.json', true);
+weatherObject.open('GET', 'https://api.wunderground.com/api/07dd5555c9ddfa39/forecast/geolookup/conditions/q/MN/Franklin.json', true);
 
 weatherObject.send();
 
