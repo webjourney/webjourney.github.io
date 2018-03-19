@@ -1,0 +1,190 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+  color:#F9F6E3;
+  background-color: #2D7592;
+    /* Declare the base font-family - from google font api or other */
+}
+/*.bodylay{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}*/
+header, nav, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    color: #F9F6E3;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {}
+.headerlay{
+    flex:1 1 80px;
+    flex-direction:column;
+    text-align:center;
+}
+header h1 {
+    font-size: 45px;
+    display:inline-flex;
+    justify-content: center;
+}
+header img {} /* fill the page in the small/phone view */
+
+header .subheading {
+    font-size: 15pt;
+    font-family: 'Shadows Into Light Two', cursive;
+    display:flex;
+    justify-content: center;
+}
+
+nav {}
+.hamburger{
+    display:flex;
+    justify-content:center;
+}
+/*nav button {
+    display:block; 
+    margin:auto;
+}*/
+.hamburger:hover, .hamburger:focus{
+    background-color: #F9F6E3;
+}
+.show {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+navigation{
+    list-style: none; 
+}
+.navigation li{
+    display:none;
+}
+.dropdown responsive{
+    display:none;
+    justify-content: center;
+}
+nav ul {
+    display:none;
+    list-style-type:none;
+    overflow: hidden;
+    background-color: #CDEBF1
+}
+nav ul li {
+    text-align: center;
+    
+}
+
+nav ul li a {
+    display: inline-flex;
+    padding: 8px 16px;
+    color: #2D7592;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #2D7592;
+    border-radius: 1rem;
+    color: #FFCB99;
+}
+nav ul li a:hover {
+    background-color: #F9F6E3;
+    border-radius: 1rem;
+}
+
+main {
+    font-size:10pt;
+
+    
+}
+main h2{
+    text-align: center;
+    font-size: 35px;
+}
+main .gridlay {
+    text-align: center;
+    grid-gap: 50px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+form#stormweather{
+    margin:16px 3%;
+}
+::placeholder { /* from w3cschool Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #D1D0B4;
+    opacity: 1; /* Firefox */
+}
+
+fieldset{
+    border-radius:.8em;
+    margin: 24px 0;
+    border: #F9F6E3 double 5px;
+ }
+legend{
+    color: #2D7592;
+    font-size: 25px;
+    margin-left: 6%;
+    padding: 8px;
+    border: #F9F6E3 solid 1px;
+    background-color: #A0C4DB;
+    border-radius: .4em;
+}
+lable{
+    margin:8px;
+}
+label span{
+    display:block;
+    padding-bottom:8px;
+    padding-top: 8px;
+    text-align: left;
+}
+input.submitBtn{
+    -webkit-appearance:none;
+    color:#F9F6E3;
+    border-radius:7px;
+    width:50%;
+    font-size: 1.5em;
+    background:#8B1D03;
+}
+label input{
+    background-color: #f4f2ef;
+    padding:.3em .3em .3em 2em;
+    border-radius: 5px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;
+}
+input:focus{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+input:required{
+    background-position: 4px -63px;
+}
+input:focus:invalid {
+    background-position: 4px -113px;
+}
+input:focus:valid {
+    background-color: white;
+    background-position: 4px -163px;
+}
+footer {
+  font-size: 12.5pt;
+  font-family: 'Nunito', sans-serif;
+}
+footer aside {
+  display: flex;
+  padding-left: 10px;
+  text-align: left;
+}
+footer>p{
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

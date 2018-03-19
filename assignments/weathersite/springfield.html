@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Springfield weather forecast|RV travel|Weather Compass|999-999-9999 </title>
+  <meta name="description" content="Find out what happened to the weather in Springfield. In Weather Compass, you can find the newest weather situation for camping, RV travel in MU 83454, new photo updated regularly.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Nunito%7CShadows+Into+Light+Two" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body><!-- class="bodylay"-->
+
+  <header>
+    <div class="headerlay"><!--from https://pt.pngtree.com/freepng/lovely-compass-vector_2394830.html-->
+    <img src="images/logoone.png" alt="The site logo">
+    <h1>Weather Compass</h1>
+    </div>
+    <div class="subheading">Bring you the newest weather forecasts.</div>
+  </header>
+  <!-- site navigation use placeholder references -->
+    <!--adapt from: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+  <nav class="dropdown responsive">  
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="myDropdown"><!-- class="naviagation responsive"-->
+        <li><a href="home.html"> Home </a></li>
+    	<li><a href="franklin.html"> Franklin </a></li>
+    	<li><a href="greenville.html"> Greenville </a></li>
+    	<li class="active"><a href="#"> Springfield </a></li>
+    	<li><a href="stormcenter.html"> Storm Center </a></li>
+    	<li><a href="gallery.html"> Gallery </a></li>
+    </ul>    
+  </nav>
+<main> <!-- class="mainlay"-->
+    <h2>Springfield</h2>
+    <div class="left"> <!--"gridlay"-->
+        <form action="thanks.html" enctype="multipart/form-data" name="forms" id="stormweather">
+        
+          <fieldset>
+              <legend><span>Personal Information</span></legend>
+              <label><span>Full Name:</span>
+                <input name="fullname" type="text" placeholder="First Last" pattern="[a-zA-z -._]{5,99}" required></label>
+        
+              <label><span>Email:</span><input name="email" type="email" placeholder="example@mail.com"></label>
+            
+              <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="##########" required></label>
+        
+              <label><span>Zip Code:</span><input name="zip" type="number" placeholder="90000"  required></label>
+         </fieldset>
+        
+        
+          <fieldset>
+              <legend><span>Storm Information</span></legend>
+              <label><span>Storm Date:</span><input name="date" type="date" ></label>
+        
+              <label><span>Storm Type:</span><input name="types" list="stormtypes" >
+              <datalist id="stormtypes">
+                  <option value="Flash Flood"></option>
+                  <option value="Hail"></option>
+                  <option value="Hurricane"></option>
+                  <option value="Thunderstorm"></option>
+                  <option value="Tornado"></option>
+              </datalist>    
+              </label>
+            
+              <label for="rating"><span>Storm Severity Range (1 to 10):</span>
+                  <input name="rate" type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
+                  <span id="box">5</span>
+              </label>
+              
+              
+              <label><span>Storm Type:</span></label>
+              <select>
+                <option value="selectreg" disabled selected>Select Region...</option>
+                <option value="frank">Franklin</option>
+                <option value="green">Greenville</option>
+                <option value="spring">Springfield</option>
+              </select>    
+              
+              
+              <label><span>User In-danger Level:</span></label> 
+              <input type="radio" name="level" value="yes"> Yes<br>
+              <input type="radio" name="level" value="maybe"> Maybe<br>
+              <input type="radio" name="level" value="no"> No 
+              
+            
+              <label><span>Additional Information or Comments:</span>
+              <textarea name="message" rows="5" cols="20"></textarea>
+              </label>
+              
+              <p><input name="submiting" type="submit" value="Submit" class="submitBtn"></p>
+        <!--<input type="hidden" value="Storm Form Submit" name="subject">-->
+               <!--input name="redirect" type="hidden" value="thanks.html"-->
+        
+          </fieldset>   
+        </form>
+    </div>    
+    </main>
+    
+<footer class="footerlay">
+    <aside>
+      	<p>Weather Compass<br>
+	  	   123 Main St.<br>
+		   Franklin, MU 83454<br>
+		   (999)999 9999<br>
+		   contact@theurl.com 
+		</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Compass | <span id="currentdate"><script src="js/currentdate.js"></script></span></p>
+</footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/ratingvalue.js"></script>
+  <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
+
+</body>
+</html>
