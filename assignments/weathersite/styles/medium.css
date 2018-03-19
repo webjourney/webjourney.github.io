@@ -36,12 +36,15 @@ body header img .imglay{
     text-align: left;
     }
 .frklay p{
-    line-height: 0.8
+    line-height: 0.8;
     }
 .frklay img{
     float:right;
     max-width: 200%;
     
+    }
+.conditions{
+    line-height:inherit;
     }
 /*franklin*/
   
