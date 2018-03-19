@@ -28,9 +28,33 @@ body header img .imglay{
    clear: both;
    font-size:85%;
 }
+    
+/*franklin*/
+ .wsinfo{
+    margin: auto 100px auto 100px;
+    display:flex;
+    padding: 10px;
+}
+    .citylay{
+     margin:auto;
+    display:grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-gap:8px;   
+}
+    .citylay h6{
+        display:none;
+} 
+/*franklin*/
+/*gallery*/
+.gridlay {
+    display:grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+}
+/*gallery*/
 footer aside {
   flex-direction:row;
-    text-align: center;
+  text-align: center;
   justify-content:center;
 } 
 }
