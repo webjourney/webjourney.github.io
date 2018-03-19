@@ -28,9 +28,31 @@ body header img .imglay{
    clear: both;
    font-size:85%;
 }
+.mainlay{
+  padding-left: 30px;      
+    }
+.frklay{
+    display:block;
+    text-align: left;
+    }
+.frklay p{
+    line-height: 0.8
+    }
+.frklay img{
+    float:right;
+    max-width: 200%;
     
+    }
 /*franklin*/
- .wsinfo{
+  
+/*.mainlay section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:8px; 
+     border: 2pt solid white;
+}*/
+
+ /*.wsinfo{
     margin: auto 100px auto 100px;
     display:flex;
     padding: 10px;
@@ -43,7 +65,7 @@ body header img .imglay{
 }
     .citylay h6{
         display:none;
-} 
+} */
 /*franklin*/
 /*gallery*/
 .gridlay {
