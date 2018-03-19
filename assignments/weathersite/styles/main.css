@@ -135,8 +135,10 @@ h6{
     padding-left: 10px;
     line-height:1;
     font-size: 18px;
-    text-align: justify;
-    
+    text-align: justify;   
+}
+.wsinfo img{
+border-radius:1rem;
 }
 .citylay img{
     max-height: 230px;
@@ -207,6 +209,9 @@ main .gridlay {
     grid-gap: 20px;
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 18px;
+}
+.gridlay img{
+    border-radius: 1rem;
 }
 /*gallery*/
 form#stormweather{

@@ -55,8 +55,10 @@ body header img .imglay{
  .wsinfo{
     margin: auto 100px auto 100px;
     display:flex;
+    flex-direction: column;
     padding: 10px;
 }
+ 
  .wsinfo img{
     align-content: center;    
     }
