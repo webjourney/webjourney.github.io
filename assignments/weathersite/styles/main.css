@@ -213,6 +213,11 @@ main .gridlay {
 .gridlay img{
     border-radius: 1rem;
 }
+.thankslay{
+    text-align: center;
+    margin: 00;
+    font-family: 'Shadows Into Light Two', cursive;
+}
 /*gallery*/
 form#stormweather{
     margin:16px 3%;
