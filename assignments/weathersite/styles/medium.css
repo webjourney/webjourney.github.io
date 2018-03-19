@@ -64,13 +64,13 @@ body header img .imglay{
     }
  
 .wsinfo .citylay{
-    margin:none;
+    margin:1px;
     display:block;
     column-count: 3;
 }
-    .wsinfo.citylay > article {
+/*.wsinfo.citylay > article {
     
-    }
+    }*/
    /* .citylay h6{
         display:none;
 } */
