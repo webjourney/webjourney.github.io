@@ -53,21 +53,27 @@ body header img .imglay{
 }*/
 
  .wsinfo{
-    margin: auto 100px auto 100px;
+    margin: auto 80px auto 80px;
     display:flex;
-    flex-direction: column;
     padding: 10px;
+    max-width: 2000px;
+
 }
  
  .wsinfo img{
-    align-content: center;    
+     float:left;
+     padding: 10px;
     }
  
 .wsinfo .citylay{
+
     margin:1px;
     display:block;
     column-count: 3;
 }
+    .citylay img{
+     max-height: 200px;
+    }
 /*.wsinfo.citylay > article {
     
     }*/
