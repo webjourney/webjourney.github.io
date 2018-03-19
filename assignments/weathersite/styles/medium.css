@@ -60,9 +60,8 @@ body header img .imglay{
  
 .wsinfo .citylay{
     margin:none;
-    display:grid;
-    grid-auto-flow: column;
-    grid-template-columns:  1fr 1fr 1fr;
+    display:block;
+    column-count: 3;
 }
     .wsinfo.citylay > article {
     
