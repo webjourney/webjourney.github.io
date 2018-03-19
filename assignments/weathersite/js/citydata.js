@@ -11,12 +11,12 @@ request.onload = function() {
     for (var i = 0; i < cities.length; i++) {
         
 	if (cities[i].name == "Franklin" || cities[i].name == "Springfield" || cities[i].name == "Greenville" ){
-    
-		var city = document.createElement('h3');
+     
+		var city = document.createElement('h2');
         city.textContent = ''+ cities[i].name + ' City';
         
         var pic =document.createElement('img');
-        pic.src = "images/franklin.jpg";
+        pic.src= "images/franklin.jpg"; /*, "images/springfield.jpeg", "greenville.jpeg";*/
         
         var motto = document.createElement('p');
         motto.textContent = '"' + cities[i].motto + '"';
@@ -24,11 +24,11 @@ request.onload = function() {
         var yrfd = document.createElement('p');
         yrfd.textContent = 'Year founded: ' + cities[i].yearFounded;
         
-        var pop = document.createElement('div');
+        var pop = document.createElement('p');
         pop.textContent =  'Population: ' + cities[i].currentPopulation; 
 
-        var rainf = document.createElement('h3');
-		 rainf.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
+        var rainf = document.createElement('p');
+        rainf.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
         
 		output.appendChild(city);
         output.appendChild(pic);
@@ -36,8 +36,9 @@ request.onload = function() {
         output.appendChild(yrfd);
         output.appendChild(pop);
         output.appendChild(rainf);
-	}
+        
     }
+  }
 };
 
 

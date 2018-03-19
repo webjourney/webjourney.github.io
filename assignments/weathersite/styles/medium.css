@@ -52,18 +52,22 @@ body header img .imglay{
      border: 2pt solid white;
 }*/
 
- /*.wsinfo{
+ .wsinfo{
     margin: auto 100px auto 100px;
     display:flex;
     padding: 10px;
 }
-    .citylay{
-     margin:auto;
+ 
+.wsinfo .citylay{
+    margin:none;
     display:grid;
-    grid-template-columns: 280px 280px 280px;
-    grid-gap:8px;   
+    grid-auto-flow: column;
+    grid-template-columns:  1fr 1fr 1fr;
 }
-    .citylay h6{
+    .wsinfo.citylay > article {
+    
+    }
+   /* .citylay h6{
         display:none;
 } */
 /*franklin*/

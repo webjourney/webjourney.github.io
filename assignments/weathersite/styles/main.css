@@ -128,11 +128,24 @@ h6{
 .frklay #w_icon{
     float:inherit;    
     }
-/*.wsinfo{
-    line-height:1.3;
+.wsinfo{
+    flex-direction: column;
+    justify-content: center;
+    padding-right:10px;
+    padding-left: 10px;
+    line-height:1;
+    font-size: 18px;
     text-align: justify;
+    
 }
-
+.citylay img{
+    max-height: 230px;
+}
+.wsinfo .citylay p{
+    font-size:20px;
+    text-align: center;
+}
+/*
 .wsinfo h2{
     font-size: 35px;
 }
