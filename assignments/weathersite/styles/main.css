@@ -120,15 +120,17 @@ main h3{
 h6{
   display:none;  
 }
+.current{
+    line-height: 2.5;
+}
 .frklay img{
     max-width: 85%;
     border-radius: 1rem;
     
     }
-.frklay #w_icon{
+.frklay #w_icon, #w_ico, #w_icoa{
     float:inherit;    
     }
-
 .frklay #plac{
     display:none;
 }
