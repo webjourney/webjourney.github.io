@@ -47,18 +47,23 @@
     </figure>
       <section>  
           <h3>Weather Summary:<br>Greenville, MN</h3>
-          
-                  
+          <h3>Weather Summary:<br><span id="plac">City,State</span></h3>
+              
       <div class="current">
-          <p>Current wether condition: Sunny</p>
-           <img src="images/sunny.png" alt="current weather" width="80">
-          <p>Current Temperature: 95&deg;F</p>
+          <p>Wether condition:&ensp;<span id= "w_strin"> </span></p>
+        <picture>
+            <img id="w_ico" src="" alt="Current Weather">
+            <br>
+        </picture>
+          <p>Current Temperature:&ensp;<span id="nowTt"></span>&deg;F</p>
       </div>
       <div class="conditions">
-        <p>Precipitation: 30%</p>  
-          <p>Max Wind Speed: 5 mph SW</p>
-          <p>Windchill: 81&deg;F</p>
-          <p>Today will be: clear sky wtih temperature in the low 90s.</p>
+          
+        <p>Precipitation: 20%</p>  
+          <p>Max Wind Speed:&ensp;<span id="windSs">5</span> mph&ensp;<span id="directio"></span></p>
+          <p>Windchill:&ensp;<span id="windchill"></span>&deg;F</p>
+          <p>Today will be:&ensp;<span id="for_strin"></span></p>
+          <script src="js/gr-weather.js"></script>
       </div> 
     </section>
     </article>
@@ -123,6 +128,7 @@ It was warm throughout the county Wednesday, reporting a high of 94 degrees. Hig
 </footer>
 
   <script src="js/hamburger.js"></script>
+<script src="js/wu-weather.js"></script>
   <!--<script src="js/ratingvalue.js"></script>-->
   <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
 

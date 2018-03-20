@@ -128,6 +128,10 @@ h6{
 .frklay #w_icon{
     float:inherit;    
     }
+
+.frklay #plac{
+    display:none;
+}
 .wsinfo{
     flex-direction: column;
     justify-content: center;
