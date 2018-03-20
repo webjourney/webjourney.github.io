@@ -18,7 +18,7 @@ weatherObject.onload = function () {
     
     document.getElementById('direction').innerHTML = weatherInfo.current_observation.wind_dir;
     
-    document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_f;
+    document.getElementById('windchil').innerHTML = weatherInfo.current_observation.windchill_f;
     
     document.getElementById('for_string').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["0"].fcttext;
     
