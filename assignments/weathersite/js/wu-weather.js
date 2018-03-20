@@ -26,6 +26,7 @@ weatherObject.onload = function () {
     
     /*document.getElementById('w_icon').innerHTML = "<img src= \"" + weatherInfo.current_observation.icon_url + "\" > ";
     var newst = document.getElementById('w_icon').innerHTML;*/
+    
     document.getElementById('w_icon').innerHTML = "<img src=\"" + weatherInfo.current_observation.icon_url + "\" > ";
     
     var newst = document.getElementById('w_icon').innerHTML;

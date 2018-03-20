@@ -18,6 +18,8 @@ request.onload = function() {
         var pic =document.createElement('img');
         pic.src= "images/franklin.jpg"; /*, "images/springfield.jpeg", "greenville.jpeg";*/
         
+        var altt = document.createElement('img').alt= "franklin city image";
+        
         var motto = document.createElement('p');
         motto.textContent = '"' + cities[i].motto + '"';
 
