@@ -132,6 +132,9 @@ h6{
 .frklay #plac{
     display:none;
 }
+.frklay #placb{
+    display:none;
+}
 .wsinfo{
     flex-direction: column;
     justify-content: center;

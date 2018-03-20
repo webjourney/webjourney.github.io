@@ -69,7 +69,51 @@ weatherObj.onload = function () {
     
     var ne = document.getElementById('w_ico').innerHTML;
     var repp = ne.replace("http:", "https:");
-    document.getElementById("w_ico").src = repp;
+    document.getElementById("w_ico").src = repp;    
+}
+
+
+
+var weatherOb = new XMLHttpRequest();
+
+weatherOb.open('GET', 'https://api.wunderground.com/api/07dd5555c9ddfa39/geolookup/conditions/forecast/q/Thailand/Sahatsakhan.json', true);
+
+weatherOb.send();
+
+weatherOb.onload = function () {
+    
+    var weatherI = JSON.parse(weatherOb.responseText);
+    console.log(weatherI);
+    document.getElementById('placb').innerHTML = weatherI.current_observation.display_location.full;
+    
+    document.getElementById('w_stri').innerHTML = weatherI.current_observation.weather;
+    
+    document.getElementById('nowTta').innerHTML = weatherI.current_observation.temp_f;
+    
+    document.getElementById('windSsa').innerHTML = weatherI.current_observation.wind_gust_mph;
+    
+    document.getElementById('directioa').innerHTML = weatherI.current_observation.wind_dir;
+    
+    document.getElementById('windchilla').innerHTML = weatherI.current_observation.windchill_f;
+    
+    document.getElementById('for_strina').innerHTML = weatherI.forecast.txt_forecast.forecastday["0"].fcttext;
+    
+    /*document.getElementById('w_icoa').src = weatherI.current_observation.icon_url;*/
+    
+    /*document.getElementById('w_icon').innerHTML = "<img src= \"" + weatherInfo.current_observation.icon_url + "\" > ";
+    var newst = document.getElementById('w_icon').innerHTML;*/
+    
+    document.getElementById('w_icoa').innerHTML = "<img src=\"" + weatherI.current_observation.icon_url + "\" > ";
+    
+    var ner = document.getElementById('w_icoa').innerHTML;
+    var reppp = ner.replace("http:", "https:");
+    document.getElementById("w_icoa").src = reppp;
     
     
 }
+
+
+
+
+
+

@@ -46,19 +46,24 @@
         <!--width="85" height="200" sizes="95vw"-->
     </figure>
       <section>  
-          <h3>Weather Summary:<br>Greenville, UT</h3>
-                  
+             <h3>Weather Summary:<br>Springfield, CO</h3>
+          <h3><span id="placb">City,State</span></h3>
+              
       <div class="current">
-          <p>Current wether condition: Sunny</p>
-           <img src="images/sunny.png" alt="current weather" width="80">
-          <p>Current Temperature:90&deg;F</p>
+          <p>Wether condition:&ensp;<span id= "w_stri"> </span></p>
+        <picture>
+            <img id="w_icoa" src="" alt="Current Weather">
+            <br>
+        </picture>
+          <p>Current Temperature:&ensp;<span id="nowTta"></span>&deg;F</p>
       </div>
       <div class="conditions">
-        <p>Precipitation: 25%</p>  
-          <p>Max Wind Speed: 3 mph SW</p>
-          <p>Windchill:70&deg;F</p>
-          <p>Today will be: clear sky wtih temperature in the upper 80s.</p>
-      </div> 
+          
+        <p>Precipitation: 35%</p>  
+          <p>Max Wind Speed:&ensp;<span id="windSsa">5</span> mph&ensp;<span id="directioa"></span></p>
+          <p>Windchill:&ensp;<span id="windchilla"></span>&deg;F</p>
+          <p>Today will be:&ensp;<span id="for_strina"></span></p>
+      </div>  
     </section>
     </article>
     
@@ -122,6 +127,7 @@ It was warm throughout the county Sunday, reporting a high of 82 degrees.The war
 </footer>
 
   <script src="js/hamburger.js"></script>
+   <script src="js/wu-weather.js"></script>
   <!--<script src="js/ratingvalue.js"></script>-->
   <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
 
