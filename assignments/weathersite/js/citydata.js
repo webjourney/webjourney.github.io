@@ -12,30 +12,30 @@ request.onload = function() {
         
 	if (cities[i].name == "Franklin" || cities[i].name == "Springfield" || cities[i].name == "Greenville" ){
         
-        if (cities[i].name == "Franklin"){
-            var pic =document.createElement('img');
-            var altt = document.createElement('img').alt= "franklin city image";
-        pic.src= "images/franklin.jpg";
-            output.appendChild(pic);
-        }
-        if (cities[i].name == "Springfield"){
-            var pic = document.createElement('img');
-            var altt = document.createElement('img').alt= "Springfield city image";
-        pic.src= "images/springfield.jpeg";
-            output.appendChild(pic);
-        }
-        if (cities[i].name == "Greenville"){
-            var pic =document.createElement('img');
-            var altt = document.createElement('img').alt= "Greenville city image";
-        pic.src= "images/greenville.jpeg";
-            output.appendChild(pic);
-        }
-        
+            if (cities[i].name == "Franklin"){
+                var pic =document.createElement('img');
+                var altt = document.createElement('img').alt= "franklin city image";
+            pic.src= "images/franklin.jpg";
+                output.appendChild(pic);
+            }
+            if (cities[i].name == "Springfield"){
+                var pic = document.createElement('img');
+                var altt = document.createElement('img').alt= "Springfield city image";
+            pic.src= "images/springfield.jpeg";
+                output.appendChild(pic);
+            }
+            if (cities[i].name == "Greenville"){
+                var pic =document.createElement('img');
+                var altt = document.createElement('img').alt= "Greenville city image";
+            pic.src= "images/greenville.jpeg";
+                output.appendChild(pic);
+            }
+
 		var city = document.createElement('h2');
         city.textContent = ''+ cities[i].name + ' City';
         
-        var pic =document.createElement('img');
-        pic.src= "images/franklin.jpg"; /*, "images/springfield.jpeg", "greenville.jpeg";*/
+        /*var pic =document.createElement('img');
+        pic.src= "images/franklin.jpg"; *//*, "images/springfield.jpeg", "greenville.jpeg";*/
         
         var altt = document.createElement('img').alt= "franklin city image";
         
