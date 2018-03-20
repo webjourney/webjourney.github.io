@@ -11,7 +11,26 @@ request.onload = function() {
     for (var i = 0; i < cities.length; i++) {
         
 	if (cities[i].name == "Franklin" || cities[i].name == "Springfield" || cities[i].name == "Greenville" ){
-     
+        
+        if (cities[i].name == "Franklin"){
+            var pic =document.createElement('img');
+            var altt = document.createElement('img').alt= "franklin city image";
+        pic.src= "images/franklin.jpg";
+            output.appendChild(pic);
+        }
+        if (cities[i].name == "Springfield"){
+            var pic = document.createElement('img');
+            var altt = document.createElement('img').alt= "Springfield city image";
+        pic.src= "images/springfield.jpeg";
+            output.appendChild(pic);
+        }
+        if (cities[i].name == "Greenville"){
+            var pic =document.createElement('img');
+            var altt = document.createElement('img').alt= "Greenville city image";
+        pic.src= "images/greenville.jpeg";
+            output.appendChild(pic);
+        }
+        
 		var city = document.createElement('h2');
         city.textContent = ''+ cities[i].name + ' City';
         
@@ -33,7 +52,7 @@ request.onload = function() {
         rainf.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
         
 		output.appendChild(city);
-        output.appendChild(pic);
+        /*output.appendChild(pic);*/
 		output.appendChild(motto);
         output.appendChild(yrfd);
         output.appendChild(pop);
