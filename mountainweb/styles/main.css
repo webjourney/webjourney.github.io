@@ -302,7 +302,7 @@ input:focus:valid {
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/
 .servlay{
 	display:block;
-	margin::auto:
+	margin:auto:
 }
 #serv  { 
     position:fixed;
