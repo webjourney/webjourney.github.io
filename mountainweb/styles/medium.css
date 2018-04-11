@@ -122,7 +122,18 @@ header h1{
 	
 /**//**//**//**//**//*EVENT TOUR PAGE*//**//**//**//**//**/
 
- 
+	.left{
+	margin-right:100px;
+	margin-left: 100px;
+	display:grid;
+    grid-template-columns: 1fr 1fr;
+	grid-gap:1px;
+	text-align: justify;
+	font-weight: bold;
+	} 
+	#artic{
+		padding-right: 20px;
+	}
 
 
 /**//**//**//**//**//*EVENT TOUR PAGE END*//**//**//**//**//**/	

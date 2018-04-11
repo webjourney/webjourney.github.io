@@ -8,13 +8,21 @@ header img {
  /* fill the page in the small/phone view */
 }
 	
+/**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
+	.left{
+		margin-right:250px;
+		margin-left: 250px;
+	}
+	
+/**//**//**//**//**//*EVENT TOURS PAGE END*//**//**//**//**//**/
+	
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/  
 	.servlay{
 		display:flex;
 		flex-direction: column;
 		justify-content: center;
-		border-left:20px solid transparent;
-		border-right: 20px solid transparent;
+		border-left:250px solid transparent;
+		border-right: 250px solid transparent;
 		
 	}
 	.tabledata{
