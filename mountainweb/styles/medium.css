@@ -115,10 +115,21 @@ header h1{
    flex-direction: column;
 
 }
+/**//**//**//**//**//*ADVENTURE TOUR PAGE*//**//**//**//**//**/
 	
+.touradvly{
+	display:grid;
+	grid-area: aRea;
+	grid-template-areas: 'aRea aRea...';
 	
+	/*display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:8px;
+	margin-left:20px;
+	margin-right:20px;*/
 	
-	
+}
+/**//**//**//**//**//*ADVENTURE TOUR PAGE END*//**//**//**//**//**/	
 	
 /**//**//**//**//**//*EVENT TOUR PAGE*//**//**//**//**//**/
 

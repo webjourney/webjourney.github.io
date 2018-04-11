@@ -250,29 +250,44 @@ main h3{
 	float:right;
 }*/
 /*body {margin:25px;}*/
-
+.adventurelays{
+	display:flex;
+	flex-direction: column;
+	text-align:center;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
 div.polaroid {
   text-align: center;
-  width: 25%;
+  width: 95%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
   margin-left: 10px;
-  border-radius: 20px;
+  padding-top: 10px;
+  font-size:23px;
+  color:#C14B20;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 div.polaroid img{
 	padding: 10px;
 	width:100%;
-	border-radius: 30px;
+	
 }
 
 div.container {
   text-align: justify;
   padding: 10px 10px;
   font-size: 15px;
+  font-family: sans-serif;
+  color:#174172;
 }
 div.description{
 	text-align: center;
+	font-size:20px;
+	font-family: 'Arial', sans-serif;
+	color:#34241F;
 }
 
 
