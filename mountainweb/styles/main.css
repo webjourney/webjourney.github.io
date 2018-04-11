@@ -187,6 +187,25 @@ main h3{
     font-size:25px;
 }
 
+
+/**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
+.left p {
+	font-size: 16px;
+	color:#174172;
+	line-height: 1.5;
+}
+#boldtext{
+	font-size: 25px;
+	font-weight: bold;
+	color:#C14B20;
+	text-align: center;
+}
+
+
+/**//**//**//**//**//*EVENT TOURS PAGE END *//**//**//**//**//**/
+
+
+
 /**//**//**//**//**//*PRODUCT SALES PAGE*//**//**//**//**//**/
 #flip, #flipg, #flips,#flipp, #flipo, #flipf{
 	font-weight: bold;
@@ -195,12 +214,15 @@ main h3{
 #flip img, #flipg img, #flips img,#flipp img{
 	border-radius: 5px;
 	border: 5px solid #174172;
+	box-shadow: 3px 3px 5px darkgray, 5px 5px 4px gray;
 }
 #flipo img{
 	border: 5px solid #C14B20;
+	box-shadow: 3px 3px 5px darkgray, 5px 5px 4px gray;
 }
 #flipf img{
 	border: 5px solid #BFEA77;
+	box-shadow: 3px 3px 5px darkgray, 5px 5px 4px gray;
 }
 #panel, #flip, #panelg, #flipg, #flips, #panels, #panelf, #flipf,#panelp, #flipp,#panelo, #flipo {
     text-align: center;
