@@ -194,13 +194,66 @@ main h3{
 	color:#174172;
 	line-height: 1.5;
 }
-#boldtext{
+#boldtext {
 	font-size: 25px;
 	font-weight: bold;
 	color:#C14B20;
 	text-align: center;
 }
+/*form#eventword{
+    margin:20px 3%;*/
+}
+::placeholder { /* from w3cschool Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #D1D0B4;
+    opacity: 1; /* Firefox */
+}
 
+fieldset{
+    border-radius:5px;
+    margin: 24px 0;
+    border: #005857 double 5px;
+ }
+legend{
+    color: #FBECDA;
+    font-size: 25px;
+    margin-left: auto;
+	margin-right: auto;
+    padding: 8px;
+    border: #005857 solid 5px;
+    background: linear-gradient( transparent, #005857, transparent);
+    border-radius: .4em;
+}
+lable{
+    margin:8px;
+}
+label span{
+    display:block;
+    padding-bottom:8px;
+    padding-top: 9px;
+    text-align: left;
+}
+
+label input{
+    background-color: #f4f2ef;
+    padding:.3em .3em .3em 1em;
+    border-radius: 2px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;
+}
+/*input:focus{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}*/
+input:required{
+    background-position: 4px -63px;
+}
+input:focus:invalid {
+    background-position: 4px -113px;
+}
+input:focus:valid {
+    background-color: white;
+    background-position: 4px -163px;
+}
 
 /**//**//**//**//**//*EVENT TOURS PAGE END *//**//**//**//**//**/
 
@@ -473,66 +526,7 @@ main .gridlay {
     font-family: 'Courgette', cursive;
 }
 /*gallery*/
-form#stormweather{
-    margin:16px 3%;
-}
-::placeholder { /* from w3cschool Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #D1D0B4;
-    opacity: 1; /* Firefox */
-}
 
-fieldset{
-    border-radius:.8em;
-    margin: 24px 0;
-    border: #F9F6E3 double 5px;
- }
-legend{
-    color: #2D7592;
-    font-size: 25px;
-    margin-left: 6%;
-    padding: 8px;
-    border: #F9F6E3 solid 1px;
-    background-color: #A0C4DB;
-    border-radius: .4em;
-}
-lable{
-    margin:8px;
-}
-label span{
-    display:block;
-    padding-bottom:8px;
-    padding-top: 8px;
-    text-align: left;
-}
-input.submitBtn{
-    -webkit-appearance:none;
-    color:#F9F6E3;
-    border-radius:7px;
-    width:50%;
-    font-size: 1.5em;
-    background:#8B1D03;
-}
-label input{
-    background-color: #f4f2ef;
-    padding:.3em .3em .3em 2em;
-    border-radius: 5px;
-    background-image: url(../images/ico_validation.png);
-    background-repeat: no-repeat;
-    background-position: 4px -11px;
-}
-input:focus{
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
-}
-input:required{
-    background-position: 4px -63px;
-}
-input:focus:invalid {
-    background-position: 4px -113px;
-}
-input:focus:valid {
-    background-color: white;
-    background-position: 4px -163px;
-}
 footer {
   font-size: 12px;
   font-family: 'Nunito', sans-serif;

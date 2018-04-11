@@ -50,85 +50,53 @@
 	<img id="serv" src="images/serviceimg2.jpg" alt="bicycle in nature and at museum" sizes="98vw"
 		 	srcset="images/serviceimg2.jpg 500w,
                    images/event.jpeg 800w,
-                   images/event.jpeg 1100w">
+                  images/event.jpeg 1100w">
 
-    <div class="tabledata">
+    <article >
     <div class="left"> <!--"gridlay"-->
-        <form action="thanks.html" enctype="multipart/form-data" name="forms" id="stormweather">
+        <form class="tabledata" action="thanks.html" enctype="multipart/form-data" name="forms" id="eventword">
         <p>		It's time for the great adventure outdoor! Last year, we had great turnout that we decided to have two-week event for this year's "Cycle the Continental Divide" activity starting on Monday, March 15th. The total cost is going to be at $1,000 for two weeks including breakfast.
-		</p>
+		<br>
 		
-		<p>You need good bicycle hat, knee protector, and gloves. All your luggage will be sent to the hotel on top of the mountain beforehand. 
-		</p>
+		<br>You need good bicycle hat, knee protector, and gloves. All your luggage will be sent to the hotel on top of the mountain beforehand. 
+		<br>
 		
-		<p>We are going to bike along the newly constructed bicycle lane near the mountain, visit the Bicycle Museum, and Bicycle History Museum, and dine at seven bicycle-theme restaurants. After those lovely time, we will ride back to our store.
-		</p>
+		<br>We are going to bike along the newly constructed bicycle lane near the mountain, visit the Bicycle Museum, and Bicycle History Museum, and dine at seven bicycle-theme restaurants. After those lovely time, we will ride back to our store.<img src="images/eventbike.jpeg" alt="biker" width="100" height="90">
+		<br>
 		
-		<p>	
+		<br>	
 		Meanwhile, if you want to stock up some cycling apparel or accessories, we will bring you to our shop and our local Sports Center with many items on sale during at the same week. 
-		</p>
+		<br>
 			
-		<p id="boldtext"> What are you waiting for? Come by our store to register, or fill in the form here for this limit time offer!
-		</p>
+			<p id="boldtext"> What are you waiting for? Come by our store to register, or fill in the form here for this limit time offer!
+			</p>
+			   
+       
           <fieldset>
-              <legend><span>Personal Information</span></legend>
+              <legend><span>Registration Form</span></legend>
               <label><span>Full Name:</span>
                 <input name="fullname" type="text" placeholder="First Last" pattern="[a-zA-z -._]{5,99}" required></label>
         
-              <label><span>Email&ast;:</span><input name="email" type="email" placeholder="example@mail.com"></label>
+              <label><span>Email&ast;:</span><input name="email" type="email" placeholder="example@mail.com" required></label>
             
               <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="##########" required></label>
         
-              <label><span>Zip Code:</span><input name="zip" type="number" placeholder="90000"  required></label>
-         </fieldset>
-        
-        
-          <fieldset>
-              <legend><span>Storm Information</span></legend>
-              <label><span>Storm Date:</span><input name="date" type="date" ></label>
-        
-              <label><span>Storm Type:</span><input name="types" list="stormtypes" >
-              <datalist id="stormtypes">
-                  <option value="Flash Flood"></option>
-                  <option value="Hail"></option>
-                  <option value="Hurricane"></option>
-                  <option value="Thunderstorm"></option>
-                  <option value="Tornado"></option>
-              </datalist>    
-              </label>
-            
-              <label for="rating"><span>Storm Severity Range (1 to 10):</span>
-                  <input name="rate" type="range" id="rating" min="0" max="10" step="1" onchange="adjustRating()">
-                  <span id="box">5</span>
-              </label>
-              
-              
-              <label><span>Storm Type:</span></label>
-              <select>
-                <option value="selectreg" disabled selected>Select Region...</option>
-                <option value="frank">Franklin</option>
-                <option value="green">Greenville</option>
-                <option value="spring">Springfield</option>
-              </select>    
-              
-              
-              <label><span>User In-danger Level:</span></label> 
-              <input type="radio" name="level" value="yes"> Yes<br>
-              <input type="radio" name="level" value="maybe"> Maybe<br>
-              <input type="radio" name="level" value="no"> No 
-              
-            
-              <label><span>Additional Information or Comments:</span>
+              <label><span>Date of Birth:</span><input name="bdate" type="date" ></label>
+			  
+			  
+              <label><span>Home State or Country:</span><input name="country" type="text" placeholder="state or country"></label>
+			  
+			  <label><span>Special accommodations/comments:</span>
               <textarea name="message" rows="5" cols="20"></textarea>
               </label>
               
               <p><input name="submiting" type="submit" value="Submit" class="submitBtn"></p>
-        <!--<input type="hidden" value="Storm Form Submit" name="subject">-->
-               <!--input name="redirect" type="hidden" value="thanks.html"-->
+	
         
           </fieldset>   
-        </form>
-    </div>    
+		</form>
+		</div>
+	</article>	
     </main>
     
 <footer class="footerlay">
