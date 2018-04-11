@@ -6,7 +6,7 @@
   <title>Service|Bicycle repare, tours, activities|Mountain Spoke|555-555-5555 </title>
   <meta name="description" content=" The greatest all-in-one bicycle searvice in Bozeman. Annual Cycle the Continental Divide, bicycle tour trips, activities, repair service, and more.">
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=Aldrich|Courgette|Gloria+Hallelujah" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Aldrich&verbarCourgette&verbarGloria+Hallelujah" rel="stylesheet">   <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -50,11 +50,12 @@
   <h2>Service</h2>
     <!--FROM:https://www.pexels.com/photo/bicycle-bike-repair-shop-132682/ and https://www.w3schools.com/cssref/pr_pos_z-index.asp-->
     <img id="serv" src="images/serviceimg1.jpeg" alt="Bicycle Service Workshop">
-    <div class="tabledata">   
+    <div class="tabledata"> 
+        <!--INFORMATION ADAPT FROM:https://bicyclehabitat.com/about/repair-menu-pg819.htm-->
         <table>
   <thead>
     <tr>
-        <th colspan="2">ACME Wildwest</th>
+        <th colspan="2">TUNE-UPS</th>
     </tr>
   </thead>
   
@@ -64,27 +65,170 @@
       <th>Price</th>
     </tr>
     <tr>
-      <td>Bicycle Tuning</td>
-        <td>&dollar;<span id="basiT">Price</span></td>
+      <td>Basic Tune</td>
+        <td>&dollar; <span id="basi"></span></td>
     </tr>
     <tr>
-      <td>September</td>
-      <td>&dollar;4,420</td>
-    </tr>
-    <tr>
-      <td>October</td>
-      <td>&dollar;4,870</td>
-    </tr>
-    <tr>
-      <td>November</td>
-      <td>&dollar;8,610</td>
-    </tr>
-    <tr>
-      <td>December</td>
-      <td>&dollar;6,820</td>
+      <td>Annual Tune</td>
+      <td>&dollar; <span id="annT"></span></td>
     </tr>
   </tbody>
         </table>
+<!--000000000000000000000000000000000000000000000000000000000-->           
+        <table>
+  <thead>
+    <tr>
+        <th colspan="2">ACCESORY INSTALLS</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Baby Seat Install</td>
+        <td>&dollar; <span id="babI"></span></td>
+    </tr>
+    <tr>
+      <td>Bar Tape Install</td>
+      <td>&dollar; <span id="barI"></span></td>
+    </tr>
+    <tr>
+      <td>Computer Install</td>
+      <td>&dollar; <span id="comI"></span></td>
+    </tr>
+    <tr>
+      <td>Rack Install</td>
+      <td>&dollar; <span id="racI"></span></td>
+    </tr>
+  </tbody>
+        </table>
+       
+<!--000000000000000000000000000000000000000000000000000000000-->           
+        <table>
+  <thead>
+    <tr>
+        <th colspan="2">BUILDS</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Assemble Bike</td>
+        <td>&dollar; <span id="asseB"></span></td>
+    </tr>
+    <tr>
+      <td>Build Up From Frame</td>
+      <td>&dollar; <span id="buiF"></span></td>
+    </tr>
+    <tr>
+      <td>Strip Frame</td>
+      <td>&dollar; <span id="strF"></span></td>
+    </tr>
+  </tbody>
+        </table>  
+        
+<!--000000000000000000000000000000000000000000000000000000000-->           
+        <table>
+  <thead>
+    <tr>
+        <th colspan="2">BRAKE</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Brake Adjust</td>
+        <td>&dollar; <span id="brakA"></span></td>
+    </tr>
+    <tr>
+      <td>Brake Bleed</td>
+      <td>&dollar; <span id="brakB"></span></td>
+    </tr>
+    <tr>
+      <td>Brake Cable Install</td>
+      <td>&dollar; <span id="brakI"></span></td>
+    </tr>
+    <tr>
+      <td>Brake Pad Install</td>
+      <td>&dollar; <span id="brakPi"></span></td>
+    </tr>
+  </tbody>
+        </table>        
+        
+<!--000000000000000000000000000000000000000000000000000000000-->           
+        <table>
+  <thead>
+    <tr>
+        <th colspan="2">WHEEL</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Wheel Build</td>
+        <td>&dollar; <span id="wheB"></span></td>
+    </tr>
+    <tr>
+      <td>Spoke Replace</td>
+      <td>&dollar; <span id="spoR"></span></td>
+    </tr>
+    <tr>
+      <td>True Wheel</td>
+      <td>&dollar; <span id="truW"></span></td>
+    </tr>
+    <tr>
+      <td>Tire/Tube Install</td>
+      <td>&dollar; <span id="tirI"></span></td>
+    </tr>
+  </tbody>
+        </table>        
+        
+<!--000000000000000000000000000000000000000000000000000000000-->           
+        <table>
+  <thead>
+    <tr>
+        <th colspan="2">HUB &amp; PEDAL</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Hub Adjust</td>
+        <td>&dollar; <span id="hubA"></span></td>
+    </tr>
+    <tr>
+      <td>Hub Overhaul</td>
+      <td>&dollar; <span id="hubO"></span></td>
+    </tr>
+    <tr>
+      <td>Pedals Install</td>
+      <td>&dollar; <span id="pedIn"></span></td>
+    </tr>
+    <tr>
+      <td>Toe Clip Install</td>
+      <td>&dollar; <span id="toeI"></span></td>
+    </tr>
+  </tbody>
+        </table>         
     </div>
   <!--<tfoot>
     <tr>

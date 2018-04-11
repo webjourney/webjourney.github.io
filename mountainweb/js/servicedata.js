@@ -1,29 +1,90 @@
-var weatherObject = new XMLHttpRequest();
+var serviceObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'https://webjourney.github.io/mountainweb/data/pricing.json', true);
+serviceObject.open('GET', 'https://webjourney.github.io/mountainweb/data/pricing.json', true);
 
-weatherObject.send();
+serviceObject.send();
 
-weatherObject.onload = function () {
+serviceObject.onload = function () {
     
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(service);
-    document.getElementById('basiT').innerHTML = repair.basicTune;
+    var priceInfo = JSON.parse(serviceObject.responseText);
+    console.log(priceInfo);
+    document.getElementById('basi').innerHTML = priceInfo.repair["0"].basicTune;
     
-    document.getElementById('w_string').innerHTML = weatherInfo.current_observation.weather;
+    document.getElementById('annT').innerHTML = 
+		priceInfo.repair["0"].yrTune;
     
-    document.getElementById('nowT').innerHTML = weatherInfo.current_observation.temp_f;
     
-    document.getElementById('windS').innerHTML = weatherInfo.current_observation.wind_gust_mph;
     
-    document.getElementById('direction').innerHTML = weatherInfo.current_observation.wind_dir;
+    document.getElementById('babI').innerHTML = 
+		priceInfo.repair[1].babySeat;
     
-    document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_f;
+    document.getElementById('barI').innerHTML = 
+		priceInfo.repair[1].barTape;
     
-    document.getElementById('for_string').innerHTML = weatherInfo.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('comI').innerHTML = 
+		priceInfo.repair[1].computer;
     
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
-    var rep = str.replace("http:", "https:");
-    document.getElementById('w_icon').innerHTML = rep;
+    document.getElementById('racI').innerHTML = 
+		priceInfo.repair[1].rack;
     
+    
+    
+    document.getElementById('asseB').innerHTML = 
+		priceInfo.repair[2].assemble;
+    
+    document.getElementById('buiF').src = 
+		priceInfo.repair[2].buildUP;
+    
+    document.getElementById('strF').innerHTML = 
+		priceInfo.repair[2].stripFram;
+    
+    
+    
+    document.getElementById('brakA').src = 
+		priceInfo.repair[3].brkAdj;
+    
+    document.getElementById('brakB').innerHTML = 
+		priceInfo.repair[3].brkBleed;
+    
+    document.getElementById('brakI').src = 
+		priceInfo.repair[3].brkCable;
+    
+    document.getElementById('brakPi').innerHTML = 
+		priceInfo.repair[3].brkPad;
+    
+    
+    
+    
+    document.getElementById('wheB').src = 
+		priceInfo.repair[4].weelB;
+    
+    document.getElementById('spoR').innerHTML = 
+		priceInfo.repair[4].spokeRep;
+    
+    document.getElementById('truW').src = 
+		priceInfo.repair[4].trueW;
+    
+    document.getElementById('tirI').innerHTML = 
+		priceInfo.repair[4].tireTub;
+    
+    
+    
+    document.getElementById('hubA').src = 
+		priceInfo.repair[5].hubAdj;
+    
+    document.getElementById('hubO').innerHTML = 
+		priceInfo.repair[5].hubAll;
+    
+    document.getElementById('pedIn').src = 
+		priceInfo.repair[5].pedIns;
+    
+    document.getElementById('toeI').innerHTML = 
+		priceInfo.repair[5].toeClip;
+   
 }
+
+
+
+
+
+
