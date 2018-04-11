@@ -188,6 +188,95 @@ main h3{
 }
 
 
+/**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
+
+.adventure {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.adventure:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/**//**//**//**//**//*HOME PAGE END*//**//**//**//**//**/
+
+
+
+
+
+
+
+/**//**//**//**//**//*ADVENTURE TOURS PAGE*//**//**//**//**//**/
+/*.advtours{
+	display:flex;
+	flex-direction: column;
+	text-align:center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#advarti{
+	display:inline-block;
+	float:right;
+}*/
+/*body {margin:25px;}*/
+
+div.polaroid {
+  text-align: center;
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+div.polaroid img{
+	padding: 10px;
+	width:100%;
+	border-radius: 30px;
+}
+
+div.container {
+  text-align: justify;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+div.description{
+	text-align: center;
+}
+
+
+/**//**//**//**//**//*ADVENTURE TOURS PAGE END*//**//**//**//**//**/
 /**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
 .left {
 	font-size: 23px;
@@ -329,7 +418,12 @@ thead tr th {
 	border-radius: 5px;
 	text-align: center;
 }
-td ,th{
+th{
+	border-right: 2px solid #174172;
+	border-left: 2px solid #174172;
+	border-bottom: 2px solid #174172;
+}
+td {
 	font-family: 'Aldrich', sans-serif;
 	font-weight: bold;
 	font-size: 17px;
