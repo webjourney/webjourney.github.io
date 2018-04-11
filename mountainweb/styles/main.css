@@ -190,14 +190,14 @@ main h3{
 
 /**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
 
-.adventure {
+.home {
   position: relative;
-  width: 50%;
+  width: 98%;
 }
 
 .image {
   display: block;
-  width: 30%;
+  width: 100%;
   height: auto;
 }
 
@@ -208,26 +208,36 @@ main h3{
   left: 0;
   right: 0;
   height: auto;
-  width: 30%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #8B1D03;
+}
+.home:hover .overlay {
+   opacity: 0.8;
 }
 
-.adventure:hover .overlay {
-  opacity: 1;
+div a{
+  color:white;
+  text-decoration:none;
 }
-
 .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  position:relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /**//**//**//**//**//*HOME PAGE END*//**//**//**//**//**/
 
@@ -406,7 +416,7 @@ input:focus:valid {
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/
 .servlay{
 	display:block;
-	margin:auto:
+	margin:auto;
 }
 #serv  { 
     position:fixed;
