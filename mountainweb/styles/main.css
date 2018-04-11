@@ -190,6 +190,32 @@ main h3{
 
 /**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
 
+/*.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 95%;
+  max-width: 95%;
+  padding: 0 4px;
+  
+
+}
+
+.column img {
+  	
+  margin-top: 8px;
+	border-radius: 10px;
+  /*vertical-align:sub;*/
+}
+
+
+
+
+
 .home {
   position: relative;
   width: 98%;

@@ -115,6 +115,25 @@ header h1{
    flex-direction: column;
 
 }
+	
+	/**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
+	
+	
+	 .column {
+		 display:grid;
+		 align-content: stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:8px;
+	margin-left:20px;
+	margin-right:20px;
+    /*display:grid;
+		 grid-column: 1fr 1fr;
+		*/
+    max-width: 90%;
+  }
+	
+/**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/	
+	
 /**//**//**//**//**//*ADVENTURE TOUR PAGE*//**//**//**//**//**/
 	
 .touradvly{

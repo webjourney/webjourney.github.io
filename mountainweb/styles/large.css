@@ -7,6 +7,11 @@ header h1 {
 header img {
  /* fill the page in the small/phone view */
 }
+/**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
+.column {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+	
 	
 /**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
 	.left{
