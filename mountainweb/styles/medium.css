@@ -115,8 +115,31 @@ header h1{
    flex-direction: column;
 
 }
+	
+	
+	
+	
+	
+/**//**//**//**//**//*PRODUCT SALES PAGE*//**//**//**//**//**/
+
+
+
+
+/**//**//**//**//**//*PRODUCT SALES PAGE END*//**//**//**//**//**/	
+	
+	
+	
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/   
+ #serv  { 
+    height:72%;
     
+}
+	
+	.tabledata{
+	display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:8px; 
+}  
     
     
     

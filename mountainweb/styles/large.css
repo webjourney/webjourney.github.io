@@ -7,6 +7,31 @@ header h1 {
 header img {
  /* fill the page in the small/phone view */
 }
+	
+/**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/  
+	.servlay{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		border-left:20px solid transparent;
+		border-right: 20px solid transparent;
+		
+	}
+	.tabledata{
+    grid-template-columns: 1fr 1fr 1fr;
+	
+}    
+/**//**//**//**//**//*SERVICE PAGE END*//**//**//**//**//**/	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 form#stormweather{
    display:flex;
    justify-content: center;   

@@ -181,22 +181,86 @@ main {
 }
 main h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
 }
 main h3{
     font-size:25px;
 }
+
+/**//**//**//**//**//*PRODUCT SALES PAGE*//**//**//**//**//**/
+#flip, #flipg, #flips,#flipp, #flipo, #flipf{
+	font-weight: bold;
+	font-size: 26px;
+}
+#flip img, #flipg img, #flips img,#flipp img{
+	border-radius: 5px;
+	border: 5px solid #174172;
+}
+#flipo img{
+	border: 5px solid #C14B20;
+}
+#flipf img{
+	border: 5px solid #BFEA77;
+}
+#panel, #flip, #panelg, #flipg, #flips, #panels, #panelf, #flipf,#panelp, #flipp,#panelo, #flipo {
+    text-align: center;
+	font-family: 'Aldrich', sans-serif;
+	/*border: 5px solid #BFEA77;*/
+}
+
+#panel, #panelg, #panels, #panelf, #panelp, #panelo{
+	line-height: 1.2;
+    display: none;
+	font-size: 18px;
+}
+
+
+
+/**//**//**//**//**//*PRODUCT SALES PAGE END*//**//**//**//**//**/
+
+
+
+
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/
-#serv  {    
-    position:absolute;
-    left: 0px;
+.servlay{
+	display:block;
+	margin: auto:
+}
+#serv  { 
+    position:fixed;
+	left: 0px;
     top:0px;
     z-index: -1;
     width:100%;
-    height:72%;
+    height:100%;
     
 }
-
+.tabledata{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right:30px;
+	padding-left:30px;
+}
+thead tr th {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	background: linear-gradient(#174172, #2981CC, #174172);
+	color: #FBECDA;
+	border-radius: 5px;
+	text-align: center;
+}
+td ,th{
+	font-family: 'Aldrich', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	border-bottom: 2px solid #174172;
+	border-right: 2px solid #174172;
+	border-left: 2px solid #174172;
+	text-align:justify;
+	padding: 10px;
+}
 
 
 

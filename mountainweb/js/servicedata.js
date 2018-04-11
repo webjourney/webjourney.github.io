@@ -8,6 +8,7 @@ serviceObject.onload = function () {
     
     var priceInfo = JSON.parse(serviceObject.responseText);
     console.log(priceInfo);
+	
     document.getElementById('basi').innerHTML = priceInfo.repair["0"].basicTune;
     
     document.getElementById('annT').innerHTML = 
@@ -32,21 +33,19 @@ serviceObject.onload = function () {
     document.getElementById('asseB').innerHTML = 
 		priceInfo.repair[2].assemble;
     
-    document.getElementById('buiF').src = 
+    document.getElementById('buiF').innerHTML = 
 		priceInfo.repair[2].buildUP;
     
     document.getElementById('strF').innerHTML = 
 		priceInfo.repair[2].stripFram;
     
-    
-    
-    document.getElementById('brakA').src = 
+    document.getElementById('brakA').innerHTML = 
 		priceInfo.repair[3].brkAdj;
     
     document.getElementById('brakB').innerHTML = 
 		priceInfo.repair[3].brkBleed;
     
-    document.getElementById('brakI').src = 
+    document.getElementById('brakI').innerHTML = 
 		priceInfo.repair[3].brkCable;
     
     document.getElementById('brakPi').innerHTML = 
@@ -55,13 +54,13 @@ serviceObject.onload = function () {
     
     
     
-    document.getElementById('wheB').src = 
+    document.getElementById('wheB').innerHTML = 
 		priceInfo.repair[4].weelB;
     
     document.getElementById('spoR').innerHTML = 
 		priceInfo.repair[4].spokeRep;
     
-    document.getElementById('truW').src = 
+    document.getElementById('truW').innerHTML = 
 		priceInfo.repair[4].trueW;
     
     document.getElementById('tirI').innerHTML = 
@@ -69,13 +68,13 @@ serviceObject.onload = function () {
     
     
     
-    document.getElementById('hubA').src = 
+    document.getElementById('hubA').innerHTML = 
 		priceInfo.repair[5].hubAdj;
     
     document.getElementById('hubO').innerHTML = 
 		priceInfo.repair[5].hubAll;
     
-    document.getElementById('pedIn').src = 
+    document.getElementById('pedIn').innerHTML = 
 		priceInfo.repair[5].pedIns;
     
     document.getElementById('toeI').innerHTML = 
