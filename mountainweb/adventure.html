@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure Tours Information|Bicycle tour, activities, repare|Mountain Spoke|555-555-5555 </title>
+  <meta name="description" content=" The greatest all-in-one bicycle searvice in Bozeman. Annual Cycle the Continental Divide, bicycle tour trips, activities, repair service, and more.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Courgette|Gloria+Hallelujah" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <div class="headerlay">
+    <img src="images/l6.png" alt="The site logo">
+    <h1>The Mountain Spoke</h1>
+    </div>
+    <div class="subheading">The greatest store for the bicycle enthusiasts.</div>
+  </header>
+  <!-- site navigation use placeholder references -->
+    <!--adapt from: https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+    <nav class="dropdown responsive">  
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="myDropdown"><!-- class="naviagation responsive"
+    <ul class="navigation">-->
+       <li><a href="index.html"> Home </a></li>
+    	<li><a href="adventure.html"> Adventure Tours</a></li>
+    	<li><a href="event.html"> Event </a></li>
+    	<li><a href="sales.html"> Product </a></li>
+    	<li><a href="service.html"> Service </a></li>
+    	<li class="active"><a href="#"> Contact </a></li>
+    </ul>
+    </nav>
+<!--FROM:https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp--> 
+    <div id="mySidenav" class="sidenav">
+      <a href="index.html" id="home"> Home </a>
+      <a href="adventure.html" id="adv"> Adventure </a>
+      <a href="event.html" id="event"> Event </a>
+      <a href="sales.html" id="product"> Product </a>
+      <a href="service.html" id="service"> Service </a>
+      <a href="contact.html" id="contact" > Contact </a>
+     
+ </div>
+<main class="mainlay">
+  <h2>Adventure Tours</h2>
+    <article class="frklay">
+        <h6>-</h6>
+    <figure>
+      <img src="images/franklin.jpg" alt="sunny cityview" width="400">
+           <!--srcset="images/franklin.jpg 500w,
+                   images/frandklin-medium.jpg 800w,
+                   images/frandklin-large.jpg 1100w"-->
+        <!--width="85" height="200" sizes="95vw"-->
+    </figure>
+      <section>  
+          <h3>Weather Summary:<br><span id="place">City,State</span></h3>
+                  
+      <div class="current">
+          <p>Wether condition:&ensp;<span id= "w_string"> </span></p>
+        <picture>
+            <img id="w_icon" src="#" alt="current weather">
+        </picture>
+          <p>Current Temperature:&ensp;<span id="nowT"></span>&deg;F</p>
+      </div>
+      <div class="conditions">
+          
+        <p>Precipitation: 20%</p>  
+          <p>Max Wind Speed:&ensp;<span id="windS">5</span> mph&ensp;<span id="direction"></span></p>
+          <p>Windchill:&ensp;<span id="windchil"></span>&deg;F</p>
+          <p>Today will be:&ensp;<span id="for_string"></span></p>
+      </div> 
+    </section>
+    </article>
+    
+    <div>
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>25&deg;F</td>
+            <td>28&deg;F</td>
+            <td>26&deg;F</td>
+            <td>23&deg;F</td>
+            <td>20&deg;F</td>
+            <td>21&deg;F</td>
+            <td>23&deg;F</td>
+            <td>26&deg;F</td>
+            <td>28&deg;F</td>
+            <td>25&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+    </div>  
+    
+    <article class="town-article">                  
+      <h3>Franklin Storm Forecast</h3>	
+        <p> 
+            <img src="images/cloudy.jpeg" alt="Storm is comming." width="150">
+      <!-- article modified from https://weather.com/storms/winter/news/2018-03-06-east-coast-storm-potential-march-11-3-->
+First was Winter Storm Riley, which brought destructive winds, heavy snow and severe coastal flooding to the Northeast late last week. Now Winter Storm Quinn will continue to dump heavy snow on the Northeast Thursday. After Quinn departs Thursday night, we'll turn our attention to the next potential East Coast storm candidate. To be clear, the impacts, if any, from this potential storm early next week are unknown at this time. Specifics on the forecast will hinge on how the upper-level weather pattern evolves this weekend. Specifically, the evolution of energy in the upper atmosphere that is currently thousands of miles away from the eastern United States over far western Canada.
+That energy will first bring snow to the Mountain West as it slides east on Friday, including the Cascades and the northern Rockies. We'll track the latest forecast model guidance trends the next few days and will provide updates.
+      </p>
+</article> 
+</main>
+    
+<footer class="footerlay">
+    <aside>
+      	<p>The Mountain Spoke<br>
+	  	   3950 Valley Commons Drive<br>
+		   Bozeman, MT<br>
+		   (555)555-5555<br>
+		   contact@thefakeurl.com 
+		</p>
+    </aside>
+    <p>&copy;2018 All Rights Reserved | The Mountain Spoke <a  href="https://termsfeed.com/terms-use/f93b56376eee9e898bd61f26767458b2" target="_blank"> | Terms of Use</a> <a href="resource.html" target="_blank" > | Resource</a><span id="currentdate"> | <script src="js/currentdate.js"></script></span><!--from Debbie's thread--><!--a style="color:#F9F6E3"--></p>
+</footer>
+<!--<script src="js/navswitch.js"></script>-->
+  <script src="js/hamburger.js"></script>
+    <!--<script src="js/lists.js"></script>-->
+  <!--<script src="js/ratingvalue.js"></script>-->
+  <!--<script type="text/javascript" src="js/currentdate.js"></script>-->
+
+</body>
+</html>

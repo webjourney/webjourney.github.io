@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+ 
+header h1 {
+    font-size: 250%;
+}
+header img {
+ /* fill the page in the small/phone view */
+}
+form#stormweather{
+   display:flex;
+   justify-content: center;   
+}
+fieldset{
+    margin-left: 30px;
+}
+main .gridlay {
+    grid-template-columns: 350px 350px 350px;
+}
+.gridlay img:hover {
+    box-shadow: 5px 5px 10px #c3c0c0;
+    }
+footer aside {
+  display: flex;
+  padding-left: 15px;
+}
+}

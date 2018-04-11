@@ -3,9 +3,8 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 body {
   font-size: 25px;
-  font-family: 'Nunito', sans-serif;
-  color:#F9F6E3;
-  background-color: #2D7592;
+  font-family: 'Arial', sans-serif;
+  color:#174172;
     /* Declare the base font-family - from google font api or other */
 }
 /*.bodylay{
@@ -13,51 +12,63 @@ body {
     flex-direction:column;
     justify-content: center;
 }*/
-header, nav, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    color: #F9F6E3;
+    color: #174172;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    /*background-color: #F9F6E3;*/
 }
 
-header {}
+header {
+    background: linear-gradient(#E8E3B8, #F9F6E3);
+}
 .headerlay{
     flex:1 1 80px;
     flex-direction:column;
     text-align:center;
 }
 header h1 {
-    font-size: 45px;
+    font-size: 40px;
     display:inline-flex;
+    font-family: 'Courgette', cursive;
     justify-content: center;
+    line-height: 0.1px;
 }
-header img {} /* fill the page in the small/phone view */
+header img {
+    max-width: 85px;
+    padding-top: 10px;
+} /* fill the page in the small/phone view */
 
 header .subheading {
-    font-size:17.9pt;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-size:15px;
+    font-family: 'Arial', sans-serif;
     display:flex;
     justify-content: center;
+    line-height: 20px;
 }
 
 nav {}
 .hamburger{
+    
     display:flex;
     justify-content:center;
 }
-/*nav button {
+nav button {
     display:block; 
     margin:auto;
-}*/
+}
 .hamburger:hover, .hamburger:focus{
-    background-color: #F9F6E3;
+    background-color: #F2E0D2;
 }
 .show {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    display:block;
+    padding: 2px;
+    margin:auto;
+    /*flex-direction:column;
+    justify-content:center;*/
 }
 navigation{
     list-style: none; 
@@ -73,7 +84,7 @@ nav ul {
     display:none;
     list-style-type:none;
     overflow: hidden;
-    background-color: #CDEBF1
+    background-color: #005857;
 }
 nav ul li {
     text-align: center;
@@ -81,31 +92,92 @@ nav ul li {
 }
 
 nav ul li a {
-    display: inline-flex;
+    font-size: 18px;
+    display: block;
     padding: 8px 16px;
-    color: #2D7592;
+    color: #F9F6E3;
     text-decoration: none;
 }
 nav ul li.active a {
-    background-color: #2D7592;
-    border-radius: 1rem;
-    color: #FFCB99;
+    background-color: #BFEA77; 
+    color: #174172;
 }
 nav ul li a:hover {
-    background-color: #F9F6E3;
-    border-radius: 1rem;
+    background-color: #BFEA77;
+    color:#174172;
+   
+}
+.sidenav{
+    display:none;
 }
 
-.thankslay{
+/*.dropbtn{
+    display:block;
+    margin-left:150px;
+    background-color:#FBECDA;
+    color:navy;
+    padding: 6px;
+    font-size: 25px;
+    border: 1px solid #174172 ;
+    border-radius: 5px;
+}
+.dropdown{
+    margin-left:auto;
+    position:relative;
+    display:inline-block;
+
+}*/
+
+/*.dropdown-content {
+    display: none;
+    /*position: absolute;*/
+   /* background-color: #f1f1f1;
+    min-width: 65px;
+    box-shadow: 0px 8px 16px 0px rgba(1,2,2,0.2);
+    border-radius: 5px;
+    /*z-index: 1;*/
+/*}*/
+/*
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     text-align: center;
-    margin: 00;
-    font-family: 'Courgette', cursive;
+    display: block;
+    font-size: 12px;
 }
 
+.dropdown-content a:hover {background-color: #ddd}
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+/*
+.sidenav a {
+    background-color: #005857; /* Grey background color */
+   /* color: #F9F6E3; /* Black text color */
+   /* display: block; /* Make the links appear below each other */
+    /*padding: 2px; /* Add some padding */
+    /*font-size:20px;
+    text-decoration: none;/* Remove underline from links */
+    /*text-align: center;
+}
+/*
+.sidenav a:hover {
+    background-color: #BFEA77;/* Dark grey background on mouse-over */
+    /*color:#174172;
+}
+/*
+.sidenav a.active {
+    background-color: #BFEA77; /* Add a green color to the "active/current" link */
+   /* color: #174172;
+}
 
+*/
 main {
     font-size:10pt;
+    background: linear-gradient( transparent, #F9F6E3);
 }
 main h2{
     text-align: center;
@@ -114,8 +186,84 @@ main h2{
 main h3{
     font-size:25px;
 }
+/**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/
+#serv  {    
+    position:absolute;
+    left: 0px;
+    top:0px;
+    z-index: -1;
+    width:100%;
+    height:72%;
+    
+}
+
+
+
+
+/**//**//**//**//**//*SERVICE PAGE END*//**//**//**//**//**/
+
+
+/**//**//**//**//**//*CONTACT PAGE*//**//**//**//**//**/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #ABBD56;
+    color: #F9F6E3;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#subject{
+    height:200px;
+}
+/* Add a background color and some padding around the form */
+.contactlay {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#info{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color:#005857;
+    font-size: 15px;
+    line-height: 1.5;
+}
+#map {
+    display: block;
+    margin: auto;
+    border: 2px solid #174172;
+    border-radius: 4px;
+    
+}
+/**//**//**//**//**//*CONTACT PAGE END*//**//**//**//**//**/
+
+
+
+
+
+
+
+
 /*franklin*/
-.mainlay{
+/*.mainlay{
     margin-right: auto;
     margin-left: auto;
     max-width: 800px;
@@ -124,7 +272,7 @@ main h3{
     padding-right: 10px;
 }
 .mainlay img{
-}
+}*/
 h6{
   display:none;  
 }
@@ -164,6 +312,9 @@ border-radius:1rem;
     font-size:20px;
     text-align: center;
 }
+/*#mySidenav.icon{
+    display:none;
+}*/
 /*
 .wsinfo h2{
     font-size: 35px;
@@ -230,6 +381,11 @@ main .gridlay {
 .gridlay img{
     border-radius: 1rem;
 }
+.thankslay{
+    text-align: center;
+    margin: 00;
+    font-family: 'Courgette', cursive;
+}
 /*gallery*/
 form#stormweather{
     margin:16px 3%;
@@ -292,18 +448,23 @@ input:focus:valid {
     background-position: 4px -163px;
 }
 footer {
-  font-size: 10.3pt;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
+  background: linear-gradient(#F9F6E3, #E8E3B8);
 }
 footer aside {
   display: flex;
-  padding-left: 10px;
-  text-align: left;
+  text-align: center;
+  justify-content:center;
 }
 footer>p{
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
+}
+footer a{
+  color:#174172;
+  text-decoration:none;
 }
 /* This structure refers to p elements that are direct children of the footer element */
 

@@ -1,0 +1,47 @@
+/*ADAPT FROM:https://bicyclehabitat.com/about/repair-menu-pg819.htm*/
+services ={
+  "repair" : [
+  {
+    "name": "Tune-Ups",
+    "basicTune": 75,
+    "yrTune": 150,
+    "overhal": 320,
+  },
+  {
+    "name": "Accessory Installs",
+    "babySeat": 30,
+    "barTape": 15,
+    "computer": 30,
+    "rack": 25,
+  },
+  {
+    "name": "Builds",
+    "assemble": 75,
+    "buildUP": 190,
+    "stripFram": 35,
+  },
+
+  {
+    "name": "Brake",
+    "brkAdj": 20,
+    "brkBleed": 60,
+    "brkCable": 20,
+    "brkPad": 17,
+  },
+  {
+    "name": "Wheel",
+    "weelB": 60,
+    "spokeRep": 30,
+    "trueW": 20,
+    "tireTub": 10,
+  },
+  {
+    "name": "Hub-Pedal",
+    "hubAdj": 18,
+    "hubAll": 35,
+    "pedIns": 8,
+    "toeClip": 15,
+  }
+      
+ ]
+}

@@ -1,0 +1,213 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+ /*nav button {  
+  display:none; 
+  }  /* hamburger button does not need to be shown */
+body header img .imglay{
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: center;
+}
+header h1{
+    font-size: 50px;    
+    }
+    
+.dropdown{
+   display:none;
+    }
+    
+  .show {
+    flex-direction:row;
+}
+ nav ul {
+    display:flex;
+    list-style-type:none;
+    justify-content: center;
+}
+/*NAVIGATION DROP DOWN */
+  /*  .navigation > li{
+        Position: relative;
+        background: rgba(0,0,0,0.2);
+        width:150px;
+        height: 10px;
+        padding: 20px;
+        margin-top: 2px;
+        right: -188px;
+        border-left: 50px solid red;
+        -webkit-transition:  right 500ms;
+        -moz-transition: right 500ms;
+        -ms-transition: right 500ms;
+        -o-transition: right 500ms;
+        transition: right 500ms;
+    } 
+    
+    li.active{
+        right:0px;
+    }
+    */
+/*NAVIGATION DROP DOWN */  
+    
+ /*nav ul li {
+   clear:both;
+   font-size:100%;
+}  */ 
+    .sidenav{
+        display:block;
+    }
+#mySidenav a {
+    position: fixed;/* Position them relative to the browser window */
+    right:-80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 10px 80px 10px 30px;/* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    /*font-size: 20px;/* Increase font size */
+    color: #FBECDA; /* White text color */
+    border-radius: 5px 0 0 5px;/* Rounded corners on the top right and bottom right side */
+    /*font-weight: 100;*/
+}
+
+#mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+    top: 20px;
+    background-color: #8B1D03;
+    font-size: 20px;
+}
+
+#adv {
+    top: 65px;
+    background-color: #6F3706;
+    font-size: 17px;/* Blue */
+}
+
+#event {
+    top: 106px;
+    background-color: #B52432; /* Red */
+    font-size: 20px;
+}
+
+#product {
+    top: 151px;
+    background-color: #FD8315; /* Light Black */
+    font-size: 20px;
+} 
+    
+#service {
+    top: 196px;
+    background-color: #7D5850; /* Light Black */
+    font-size: 20px;
+} 
+    
+#contact {
+    top: 241px;
+    background-color: #C14B20; /* Light Black */
+    font-size: 20px;
+} 
+ main {
+   clear: both;
+   font-size:85%;
+   display:flex;
+   flex-direction: column;
+
+}
+/**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/   
+    
+    
+    
+    
+    
+    
+/**//**//**//**//**//*SERVICE PAGE END*//**//**//**//**//**/
+/*CONTACT PAGE*/
+    .contactlay{
+    max-width:600px;
+    }
+.contform{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#info{
+    font-size: 17px;
+    border: 50px solid transparent;
+}
+#map{
+    height:350px;
+    }
+/**//**//**//**//**//*CONTACT PAGE END*//**//**//**//**//**/    
+/*.mainlay{
+  padding-left: 30px;      
+    }*/
+.frklay{
+    display:block;
+    text-align: left;
+    }
+.frklay p{
+    line-height: 0.8;
+    }
+.frklay img{
+    float:right;
+    max-width: 200%;
+    
+    }
+.conditions{
+    line-height:inherit;
+    }
+/*franklin*/
+  
+/*.mainlay section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap:8px; 
+     border: 2pt solid white;
+}*/
+
+ .wsinfo{
+    margin: auto 80px auto 80px;
+    display:flex;
+    padding: 10px;
+    max-width: 2500px;
+    align-content: center;
+
+}
+ 
+ .wsinfo img{
+     float:left;
+     padding: 10px;
+    }
+ 
+.wsinfo .citylay{
+
+    margin:1px;
+    display:block;
+    column-count: 3;
+}
+    .citylay img{
+     max-height: 200px;
+    }
+/*.wsinfo.citylay > article {
+    
+    }*/
+   /* .citylay h6{
+        display:none;
+} */
+/*franklin*/
+/*gallery*/
+.gridlay {
+    display:grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+}
+/*gallery*/
+/*footer aside {
+  flex-direction:row;
+  text-align: center;
+  justify-content:center;
+} */
+}
+  
