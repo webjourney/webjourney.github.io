@@ -10,54 +10,37 @@ header img {
 /**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
 .column {
     grid-template-columns: 1fr 1fr 1fr;
-  }
+}
 	
 	
 /**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
-	.left{
-		margin-right:250px;
-		margin-left: 250px;
-	}
-	
-/**//**//**//**//**//*EVENT TOURS PAGE END*//**//**//**//**//**/
+.left{
+	margin-right:250px;
+	margin-left: 250px;
+}
 	
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/  
-	.servlay{
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		border-left:250px solid transparent;
-		border-right: 250px solid transparent;
+.servlay{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right:8%;
+	margin-left: 8%;
 		
-	}
-	.tabledata{
+}
+.tabledata{
     grid-template-columns: 1fr 1fr 1fr;
 	
 }    
 /**//**//**//**//**//*SERVICE PAGE END*//**//**//**//**//**/	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-form#stormweather{
-   display:flex;
-   justify-content: center;   
-}
+
 fieldset{
     margin-left: 30px;
 }
 main .gridlay {
     grid-template-columns: 350px 350px 350px;
 }
-.gridlay img:hover {
-    box-shadow: 5px 5px 10px #c3c0c0;
-    }
+
 footer aside {
   display: flex;
   padding-left: 15px;

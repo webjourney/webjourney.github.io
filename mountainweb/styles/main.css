@@ -7,11 +7,6 @@ body {
   color:#174172;
     /* Declare the base font-family - from google font api or other */
 }
-/*.bodylay{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-}*/
 header, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     color: #174172;
@@ -19,7 +14,6 @@ header, footer { /* the comma means apply the following CSS declarations to all 
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    /*background-color: #F9F6E3;*/
 }
 
 header {
@@ -67,8 +61,6 @@ nav button {
     display:block;
     padding: 2px;
     margin:auto;
-    /*flex-direction:column;
-    justify-content:center;*/
 }
 navigation{
     list-style: none; 
@@ -115,7 +107,6 @@ nav ul li a:hover {
 
 main {
     font-size:18px;
-    background: linear-gradient( #F9F6E3, transparent, #F9F6E3);
 }
 main h2{
     text-align: center;
@@ -128,11 +119,7 @@ main h3{
 
 /**//**//**//**//**//*HOME PAGE*//**//**//**//**//**/
 
-/*.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+
 
 /* Create four equal columns that sits next to each other */
 #headhome{
@@ -143,18 +130,15 @@ main h3{
 }
 .column {
   flex: 95%;
-  max-width: 95%;
+  margin-right:5%;
+  margin-left: 5%;
   padding: 0 4px;
-  
-
 }
 
 .column img {
-  	
   margin-top: 8px;
-	border-radius: 10px;
+  border-radius: 10px;
 }
-
 
 .home {
   position: relative;
@@ -205,13 +189,6 @@ div a{
   height: auto;
 }
 
-/**//**//**//**//**//*HOME PAGE END*//**//**//**//**//**/
-
-
-
-
-
-
 
 /**//**//**//**//**//*ADVENTURE TOURS PAGE*//**//**//**//**//**/
 
@@ -254,18 +231,14 @@ div.description{
 	font-family: 'Arial', sans-serif;
 	color:#34241F;
 }
-/**//**//**//**//**//*ADVENTURE TOURS PAGE END*//**//**//**//**//**/
-
-
-
 
 /**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
 .left {
-	font-size: 23px;
+	font-size: 20px;
 	color:#174172;
 	line-height: 1.5;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 #boldtext {
 	font-size: 25px;
@@ -273,9 +246,6 @@ div.description{
 	color:#C14B20;
 	text-align: center;
 }
-/*form#eventword{
-    margin:20px 3%;
-}*/
 ::placeholder { /* from w3cschool Chrome, Firefox, Opera, Safari 10.1+ */
     color: #D1D0B4;
     opacity: 1; /* Firefox */
@@ -315,9 +285,8 @@ label input{
     background-repeat: no-repeat;
     background-position: 4px -11px;
 }
-/*input:focus{
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
-}*/
+
+
 input:required{
     background-position: 4px -63px;
 }
@@ -354,7 +323,6 @@ input:focus:valid {
 #panel, #flip, #panelg, #flipg, #flips, #panels, #panelf, #flipf,#panelp, #flipp,#panelo, #flipo {
     text-align: center;
 	font-family: 'Aldrich', sans-serif;
-	/*border: 5px solid #BFEA77;*/
 }
 
 #panel, #panelg, #panels, #panelf, #panelp, #panelo{
@@ -362,13 +330,6 @@ input:focus:valid {
     display: none;
 	font-size: 18px;
 }
-
-
-
-/**//**//**//**//**//*PRODUCT SALES PAGE END*//**//**//**//**//**/
-
-
-
 
 /**//**//**//**//**//*SERVICE PAGE *//**//**//**//**//**/
 .servlay{
@@ -400,7 +361,7 @@ thead tr th {
 	border-radius: 5px;
 	text-align: center;
 }
-th{
+th,td{
 	border-right: 2px solid #174172;
 	border-left: 2px solid #174172;
 	border-bottom: 2px solid #174172;
@@ -409,16 +370,9 @@ td {
 	font-family: 'Aldrich', sans-serif;
 	font-weight: bold;
 	font-size: 17px;
-	border-bottom: 2px solid #174172;
-	border-right: 2px solid #174172;
-	border-left: 2px solid #174172;
 	text-align:justify;
 	padding: 10px;
 }
-
-
-
-/**//**//**//**//**//*SERVICE PAGE END*//**//**//**//**//**/
 
 
 /**//**//**//**//**//*CONTACT PAGE*//**//**//**//**//**/
@@ -471,7 +425,6 @@ input[type=submit]:hover {
     border-radius: 4px;
     
 }
-/**//**//**//**//**//*CONTACT PAGE END*//**//**//**//**//**/
 /**//**//**//**//**//*RESOURCE PAGE*//**//**//**//**//**/
 .resolay{
 	padding: 10px;
@@ -485,133 +438,6 @@ input[type=submit]:hover {
     font-family: 'Courgette', cursive;
 }
 
-
-/*franklin*/
-/*.mainlay{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.mainlay img{
-}*/
-/*h6{
-  display:none;  
-}
-.current{
-    line-height: 2.5;
-}
-.frklay img{
-    max-width: 85%;
-    border-radius: 1rem;
-    
-    }
-.frklay #w_icon, #w_ico, #w_icoa{
-    float:inherit;    
-    }
-.frklay #plac{
-    display:none;
-}
-.frklay #placb{
-    display:none;
-}
-.wsinfo{
-    flex-direction: column;
-    justify-content: center;
-    padding-right:10px;
-    padding-left: 10px;
-    line-height:1;
-    font-size: 18px;
-    text-align: justify;   
-}
-.wsinfo img{
-border-radius:1rem;
-}
-.citylay img{
-    max-height: 230px;
-}
-.wsinfo .citylay p{
-    font-size:20px;
-    text-align: center;
-}
-/*#mySidenav.icon{
-    display:none;
-}*/
-/*
-.wsinfo h2{
-    font-size: 35px;
-}
-main article p {
-    font-size: 15px;
-}
-
-main section p {
-    font-size: 12px;
-}
-main b p {
-    font-size: 10px;
-}
-.wsinfo{
-    /*display:flex;
-    flex-direction: column;*/
-    /*line-height:1.3;
-    text-align: center;
-}
-
-.wsinfo h2{
-    font-size: 35px;
-}*//*
-main article p {
-    font-size: 16px;
-}
-
-main section p {
-    font-size: 18px;
-}
-section.forecast table{
-   margin: auto;
-   font-size:15px;
-}
-/*main b p {
-    font-size: 350px;
-}*/
-./*town-article{
-    display:block;
-    line-height: 1.3;
-    text-align: justify;
-    font-size: 14px;
-    
-}
-.town-article h3{
-    font-size:35px;
-    text-align: center;
-}
-.town-article img{
-    float: left;
-    padding-right: 10px;
-    
-}
-
-/*franklin*/
-/*gallery*/
-/*main .gridlay {
-    text-align: left;
-    grid-gap: 20px;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 18px;
-}
-.gridlay img{
-    border-radius: 1rem;
-}*/
-
-
-.thankslay{
-    text-align: center;
-    margin: 00;
-    font-family: 'Courgette', cursive;
-}
 /*gallery*/
 
 footer {
