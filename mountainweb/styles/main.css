@@ -177,7 +177,7 @@ nav ul li a:hover {
 */
 main {
     font-size:10pt;
-    background: linear-gradient( transparent, #F9F6E3);
+    background: linear-gradient( #F9F6E3, transparent, #F9F6E3);
 }
 main h2{
     text-align: center;
@@ -197,6 +197,12 @@ main h3{
 }
 
 /* Create four equal columns that sits next to each other */
+#headhome{
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	
+}
 .column {
   flex: 95%;
   max-width: 95%;
