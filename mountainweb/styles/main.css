@@ -111,72 +111,10 @@ nav ul li a:hover {
     display:none;
 }
 
-/*.dropbtn{
-    display:block;
-    margin-left:150px;
-    background-color:#FBECDA;
-    color:navy;
-    padding: 6px;
-    font-size: 25px;
-    border: 1px solid #174172 ;
-    border-radius: 5px;
-}
-.dropdown{
-    margin-left:auto;
-    position:relative;
-    display:inline-block;
 
-}*/
 
-/*.dropdown-content {
-    display: none;
-    /*position: absolute;*/
-   /* background-color: #f1f1f1;
-    min-width: 65px;
-    box-shadow: 0px 8px 16px 0px rgba(1,2,2,0.2);
-    border-radius: 5px;
-    /*z-index: 1;*/
-/*}*/
-/*
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    font-size: 12px;
-}
-
-.dropdown-content a:hover {background-color: #ddd}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-*/
-/*
-.sidenav a {
-    background-color: #005857; /* Grey background color */
-   /* color: #F9F6E3; /* Black text color */
-   /* display: block; /* Make the links appear below each other */
-    /*padding: 2px; /* Add some padding */
-    /*font-size:20px;
-    text-decoration: none;/* Remove underline from links */
-    /*text-align: center;
-}
-/*
-.sidenav a:hover {
-    background-color: #BFEA77;/* Dark grey background on mouse-over */
-    /*color:#174172;
-}
-/*
-.sidenav a.active {
-    background-color: #BFEA77; /* Add a green color to the "active/current" link */
-   /* color: #174172;
-}
-
-*/
 main {
-    font-size:10pt;
+    font-size:18px;
     background: linear-gradient( #F9F6E3, transparent, #F9F6E3);
 }
 main h2{
@@ -215,11 +153,7 @@ main h3{
   	
   margin-top: 8px;
 	border-radius: 10px;
-  /*vertical-align:sub;*/
 }
-
-
-
 
 
 .home {
@@ -280,18 +214,7 @@ div a{
 
 
 /**//**//**//**//**//*ADVENTURE TOURS PAGE*//**//**//**//**//**/
-/*.advtours{
-	display:flex;
-	flex-direction: column;
-	text-align:center;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-#advarti{
-	display:inline-block;
-	float:right;
-}*/
-/*body {margin:25px;}*/
+
 .adventurelays{
 	display:flex;
 	flex-direction: column;
@@ -331,9 +254,11 @@ div.description{
 	font-family: 'Arial', sans-serif;
 	color:#34241F;
 }
-
-
 /**//**//**//**//**//*ADVENTURE TOURS PAGE END*//**//**//**//**//**/
+
+
+
+
 /**//**//**//**//**//*EVENT TOURS PAGE*//**//**//**//**//**/
 .left {
 	font-size: 23px;
@@ -547,12 +472,18 @@ input[type=submit]:hover {
     
 }
 /**//**//**//**//**//*CONTACT PAGE END*//**//**//**//**//**/
+/**//**//**//**//**//*RESOURCE PAGE*//**//**//**//**//**/
+.resolay{
+	padding: 10px;
+	text-align: center;
+}
+/**//**//**//**//**//*RESOURCE PAGE END*//**//**//**//**//**/
 
-
-
-
-
-
+.thankslay{
+    text-align: center;
+    margin: 00;
+    font-family: 'Courgette', cursive;
+}
 
 
 /*franklin*/
@@ -566,7 +497,7 @@ input[type=submit]:hover {
 }
 .mainlay img{
 }*/
-h6{
+/*h6{
   display:none;  
 }
 .current{
@@ -631,7 +562,7 @@ main b p {
 
 .wsinfo h2{
     font-size: 35px;
-}*/
+}*//*
 main article p {
     font-size: 16px;
 }
@@ -646,7 +577,7 @@ section.forecast table{
 /*main b p {
     font-size: 350px;
 }*/
-.town-article{
+./*town-article{
     display:block;
     line-height: 1.3;
     text-align: justify;
@@ -665,7 +596,7 @@ section.forecast table{
 
 /*franklin*/
 /*gallery*/
-main .gridlay {
+/*main .gridlay {
     text-align: left;
     grid-gap: 20px;
     font-family: 'Shadows Into Light Two', cursive;
@@ -673,7 +604,9 @@ main .gridlay {
 }
 .gridlay img{
     border-radius: 1rem;
-}
+}*/
+
+
 .thankslay{
     text-align: center;
     margin: 00;
